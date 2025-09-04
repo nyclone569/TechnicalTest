@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "TechnicalTest",
+			"Path": "..\\Source\\TechnicalTest.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "TechnicalTestEditor",
+			"Path": "..\\Source\\TechnicalTestEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

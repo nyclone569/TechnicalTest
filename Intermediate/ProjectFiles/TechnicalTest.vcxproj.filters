@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\TechnicalTest.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TechnicalTest.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\TechnicalTestEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\.vsconfig" />
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\TechnicalTest">
+      <UniqueIdentifier>{81DBF617-8C4F-3965-B61C-D2667CE5DDF7}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\TechnicalTest\TechnicalTest.Build.cs">
+      <Filter>Source\TechnicalTest</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\TechnicalTest\TechnicalTest.cpp">
+      <Filter>Source\TechnicalTest</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\TechnicalTest\TechnicalTest.h">
+      <Filter>Source\TechnicalTest</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Private">
+      <UniqueIdentifier>{D36B2B34-9342-359A-BB56-B6BC934AB882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\TechnicalTest\Private\Characters">
+      <UniqueIdentifier>{93BCEFFF-1C42-32CB-95F1-80B9EFD12F32}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Characters\BaseCharacter.cpp">
+      <Filter>Source\TechnicalTest\Private\Characters</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Characters\HeroCharacter.cpp">
+      <Filter>Source\TechnicalTest\Private\Characters</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\Controllers">
+      <UniqueIdentifier>{75686FBB-2ADB-3594-838E-41F2F7F0327B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Controllers\HeroController.cpp">
+      <Filter>Source\TechnicalTest\Private\Controllers</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\GameModes">
+      <UniqueIdentifier>{61F4A6CC-2653-361B-8C0F-33BB9E036655}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\GameModes\BaseGameMode.cpp">
+      <Filter>Source\TechnicalTest\Private\GameModes</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Public">
+      <UniqueIdentifier>{3E8CC690-3A91-307D-9992-43F46D69FB6E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\TechnicalTest\Public\Characters">
+      <UniqueIdentifier>{113FA162-EAD6-3B85-B449-BD57A6B26F95}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\BaseCharacter.h">
+      <Filter>Source\TechnicalTest\Public\Characters</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\HeroCharacter.h">
+      <Filter>Source\TechnicalTest\Public\Characters</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\Controllers">
+      <UniqueIdentifier>{5A0263CE-FE63-3DB1-BFAE-32A2F6E74570}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Controllers\HeroController.h">
+      <Filter>Source\TechnicalTest\Public\Controllers</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\GameModes">
+      <UniqueIdentifier>{983A79A7-997D-39FD-B34A-3357C715824A}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\GameModes\BaseGameMode.h">
+      <Filter>Source\TechnicalTest\Public\GameModes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\DebugHelper.h">
+      <Filter>Source\TechnicalTest\Public</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
