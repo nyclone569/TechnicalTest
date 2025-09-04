@@ -11,7 +11,10 @@
     <None Include="..\..\Source\TechnicalTestEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.gitattributes" />
+    <None Include="..\..\.gitignore" />
     <None Include="..\..\.vsconfig" />
+    <None Include="..\..\README.md" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -42,6 +45,42 @@
     <Filter Include="Source\TechnicalTest\Private">
       <UniqueIdentifier>{D36B2B34-9342-359A-BB56-B6BC934AB882}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\MyGamePlayTags.cpp">
+      <Filter>Source\TechnicalTest\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\AbilitySystem">
+      <UniqueIdentifier>{1C8BF636-5047-350A-940C-E1487DC963AD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\MyAbilitySystemComponent.cpp">
+      <Filter>Source\TechnicalTest\Private\AbilitySystem</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\MyAttributeSet.cpp">
+      <Filter>Source\TechnicalTest\Private\AbilitySystem</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\AbilitySystem\Abilities">
+      <UniqueIdentifier>{3BB979DD-468B-3787-A528-B0FEC2738D12}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\MyGameplayAbility.cpp">
+      <Filter>Source\TechnicalTest\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\AnimInstances">
+      <UniqueIdentifier>{786B81A0-EE93-3A66-AFF6-F8AD0CF7C3B7}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AnimInstances\BaseAnimInstance.cpp">
+      <Filter>Source\TechnicalTest\Private\AnimInstances</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AnimInstances\CharacterAnimInstance.cpp">
+      <Filter>Source\TechnicalTest\Private\AnimInstances</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\AnimInstances\Hero">
+      <UniqueIdentifier>{FDD6267C-339E-3733-A9B4-36151E0FA367}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AnimInstances\Hero\HeroAnimInstance.cpp">
+      <Filter>Source\TechnicalTest\Private\AnimInstances\Hero</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AnimInstances\Hero\HeroLinkedAnimLayer.cpp">
+      <Filter>Source\TechnicalTest\Private\AnimInstances\Hero</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\Characters">
       <UniqueIdentifier>{93BCEFFF-1C42-32CB-95F1-80B9EFD12F32}</UniqueIdentifier>
     </Filter>
@@ -51,11 +90,29 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\Characters\HeroCharacter.cpp">
       <Filter>Source\TechnicalTest\Private\Characters</Filter>
     </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\Components">
+      <UniqueIdentifier>{E6CAECC2-26D7-3B0C-9022-32CFC7F2D8DC}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\TechnicalTest\Private\Components\Input">
+      <UniqueIdentifier>{2659C53A-339E-3453-9305-86544CACDE61}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\Input\MyInputComponent.cpp">
+      <Filter>Source\TechnicalTest\Private\Components\Input</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\Controllers">
       <UniqueIdentifier>{75686FBB-2ADB-3594-838E-41F2F7F0327B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\Controllers\HeroController.cpp">
       <Filter>Source\TechnicalTest\Private\Controllers</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\DataAssets">
+      <UniqueIdentifier>{12344AFE-2C45-3DC0-BA5C-6E3B5DC7BA53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\TechnicalTest\Private\DataAssets\Input">
+      <UniqueIdentifier>{9AE9CA31-EF03-3188-8C3B-AA0095B47292}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\DataAssets\Input\DataAsset_InputConfig.cpp">
+      <Filter>Source\TechnicalTest\Private\DataAssets\Input</Filter>
     </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\GameModes">
       <UniqueIdentifier>{61F4A6CC-2653-361B-8C0F-33BB9E036655}</UniqueIdentifier>
@@ -66,6 +123,45 @@
     <Filter Include="Source\TechnicalTest\Public">
       <UniqueIdentifier>{3E8CC690-3A91-307D-9992-43F46D69FB6E}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\DebugHelper.h">
+      <Filter>Source\TechnicalTest\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\MyGamePlayTags.h">
+      <Filter>Source\TechnicalTest\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\AbilitySystem">
+      <UniqueIdentifier>{A9B8520E-044A-386B-B294-E8F6508ADB09}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\MyAbilitySystemComponent.h">
+      <Filter>Source\TechnicalTest\Public\AbilitySystem</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\MyAttributeSet.h">
+      <Filter>Source\TechnicalTest\Public\AbilitySystem</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\AbilitySystem\Abilities">
+      <UniqueIdentifier>{6E3844AA-CD51-3C1E-B9BA-FA1F9F3A0FEE}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\MyGameplayAbility.h">
+      <Filter>Source\TechnicalTest\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\AnimInstances">
+      <UniqueIdentifier>{8EA73105-6A2D-31C6-8FD6-8450DC737BB2}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AnimInstances\BaseAnimInstance.h">
+      <Filter>Source\TechnicalTest\Public\AnimInstances</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AnimInstances\CharacterAnimInstance.h">
+      <Filter>Source\TechnicalTest\Public\AnimInstances</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\AnimInstances\Hero">
+      <UniqueIdentifier>{F39C916E-E214-3C79-9F9E-192371C9E5F8}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AnimInstances\Hero\HeroAnimInstance.h">
+      <Filter>Source\TechnicalTest\Public\AnimInstances\Hero</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AnimInstances\Hero\HeroLinkedAnimLayer.h">
+      <Filter>Source\TechnicalTest\Public\AnimInstances\Hero</Filter>
+    </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\Characters">
       <UniqueIdentifier>{113FA162-EAD6-3B85-B449-BD57A6B26F95}</UniqueIdentifier>
     </Filter>
@@ -75,22 +171,35 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\HeroCharacter.h">
       <Filter>Source\TechnicalTest\Public\Characters</Filter>
     </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\Components">
+      <UniqueIdentifier>{CAFC4ADB-76F3-3DAC-87D1-400042B8F883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\TechnicalTest\Public\Components\Input">
+      <UniqueIdentifier>{B8CA54B2-77C9-3096-8B9E-5622B9EC73A9}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\Input\MyInputComponent.h">
+      <Filter>Source\TechnicalTest\Public\Components\Input</Filter>
+    </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\Controllers">
       <UniqueIdentifier>{5A0263CE-FE63-3DB1-BFAE-32A2F6E74570}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Controllers\HeroController.h">
       <Filter>Source\TechnicalTest\Public\Controllers</Filter>
     </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\DataAssets">
+      <UniqueIdentifier>{DD6A2A57-8D55-3B2E-A2CD-A65CC0078989}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\TechnicalTest\Public\DataAssets\Input">
+      <UniqueIdentifier>{94869D55-DF9A-3F38-A11C-026CF1ABFA73}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\DataAssets\Input\DataAsset_InputConfig.h">
+      <Filter>Source\TechnicalTest\Public\DataAssets\Input</Filter>
+    </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\GameModes">
       <UniqueIdentifier>{983A79A7-997D-39FD-B34A-3357C715824A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\GameModes\BaseGameMode.h">
       <Filter>Source\TechnicalTest\Public\GameModes</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\Source\TechnicalTest\Public\DebugHelper.h">
-      <Filter>Source\TechnicalTest\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
