@@ -16,19 +16,10 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
-// ********** Begin ScriptStruct FHeroAbilitySet ***************************************************
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_13_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FHeroAbilitySet_Statics; \
-	TECHNICALTEST_API static class UScriptStruct* StaticStruct();
-
-
-struct FHeroAbilitySet;
-// ********** End ScriptStruct FHeroAbilitySet *****************************************************
-
 // ********** Begin Class UDataAsset_HeroStartUpData ***********************************************
 TECHNICALTEST_API UClass* Z_Construct_UClass_UDataAsset_HeroStartUpData_NoRegister();
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_29_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUDataAsset_HeroStartUpData(); \
 	friend struct Z_Construct_UClass_UDataAsset_HeroStartUpData_Statics; \
@@ -39,7 +30,7 @@ public: \
 	DECLARE_SERIALIZER(UDataAsset_HeroStartUpData)
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_29_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UDataAsset_HeroStartUpData(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -51,12 +42,12 @@ public: \
 	NO_API virtual ~UDataAsset_HeroStartUpData();
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_26_PROLOG
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_29_GENERATED_BODY \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_14_PROLOG
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_29_INCLASS_NO_PURE_DECLS \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_29_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_StartUpData_DataAsset_HeroStartUpData_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

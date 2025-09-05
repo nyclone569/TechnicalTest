@@ -16,8 +16,17 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+// ********** Begin ScriptStruct FHeroAbilitySet ***************************************************
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_MyTypes_MyStuctTypes_h_14_GENERATED_BODY \
+	friend struct Z_Construct_UScriptStruct_FHeroAbilitySet_Statics; \
+	TECHNICALTEST_API static class UScriptStruct* StaticStruct();
+
+
+struct FHeroAbilitySet;
+// ********** End ScriptStruct FHeroAbilitySet *****************************************************
+
 // ********** Begin ScriptStruct FHeroWeaponData ***************************************************
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_MyTypes_MyStuctTypes_h_11_GENERATED_BODY \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_MyTypes_MyStuctTypes_h_28_GENERATED_BODY \
 	friend struct Z_Construct_UScriptStruct_FHeroWeaponData_Statics; \
 	TECHNICALTEST_API static class UScriptStruct* StaticStruct();
 

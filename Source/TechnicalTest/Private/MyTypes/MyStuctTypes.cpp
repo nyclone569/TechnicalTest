@@ -2,3 +2,10 @@
 
 
 #include "MyTypes/MyStuctTypes.h"
+#include "AbilitySystem/Abilities/MyGameplayAbility.h"
+
+
+bool FHeroAbilitySet::IsValid() const
+{
+	return InputTag.IsValid() && AbilityToGrant;
+}
