@@ -16,10 +16,18 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class UMyAbilitySystemComponent;
+class UPawnCombatComponent;
+
 // ********** Begin Class UMyGameplayAbility *******************************************************
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetMyAbilitySystemComponentFromActorInfo); \
+	DECLARE_FUNCTION(execGetPawnCombatComponentFromActorInfo);
+
+
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyGameplayAbility_NoRegister();
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_21_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_24_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMyGameplayAbility(); \
 	friend struct Z_Construct_UClass_UMyGameplayAbility_Statics; \
@@ -30,7 +38,7 @@ public: \
 	DECLARE_SERIALIZER(UMyGameplayAbility)
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_21_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_24_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UMyGameplayAbility(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -42,12 +50,13 @@ public: \
 	NO_API virtual ~UMyGameplayAbility();
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_18_PROLOG
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_21_GENERATED_BODY \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_21_PROLOG
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_24_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_21_INCLASS_NO_PURE_DECLS \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_21_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_24_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_24_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h_24_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

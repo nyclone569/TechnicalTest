@@ -60,6 +60,9 @@
     <Filter Include="Source\TechnicalTest\Private\AbilitySystem\Abilities">
       <UniqueIdentifier>{3BB979DD-468B-3787-A528-B0FEC2738D12}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\HeroGameplayAbility.cpp">
+      <Filter>Source\TechnicalTest\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\MyGameplayAbility.cpp">
       <Filter>Source\TechnicalTest\Private\AbilitySystem\Abilities</Filter>
     </ClCompile>
@@ -93,6 +96,18 @@
     <Filter Include="Source\TechnicalTest\Private\Components">
       <UniqueIdentifier>{E6CAECC2-26D7-3B0C-9022-32CFC7F2D8DC}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\PawnExtentionComponentBase.cpp">
+      <Filter>Source\TechnicalTest\Private\Components</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\Components\Combat">
+      <UniqueIdentifier>{A452657D-1752-391A-B297-01A57D34899A}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\Combat\HeroCombatComponent.cpp">
+      <Filter>Source\TechnicalTest\Private\Components\Combat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\Combat\PawnCombatComponent.cpp">
+      <Filter>Source\TechnicalTest\Private\Components\Combat</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\Components\Input">
       <UniqueIdentifier>{2659C53A-339E-3453-9305-86544CACDE61}</UniqueIdentifier>
     </Filter>
@@ -162,6 +177,9 @@
     <Filter Include="Source\TechnicalTest\Public\AbilitySystem\Abilities">
       <UniqueIdentifier>{6E3844AA-CD51-3C1E-B9BA-FA1F9F3A0FEE}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\HeroGameplayAbility.h">
+      <Filter>Source\TechnicalTest\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\MyGameplayAbility.h">
       <Filter>Source\TechnicalTest\Public\AbilitySystem\Abilities</Filter>
     </ClInclude>
@@ -195,6 +213,18 @@
     <Filter Include="Source\TechnicalTest\Public\Components">
       <UniqueIdentifier>{CAFC4ADB-76F3-3DAC-87D1-400042B8F883}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\PawnExtentionComponentBase.h">
+      <Filter>Source\TechnicalTest\Public\Components</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\Components\Combat">
+      <UniqueIdentifier>{9508505E-6D07-3517-9413-B7425B3BDDBF}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\Combat\HeroCombatComponent.h">
+      <Filter>Source\TechnicalTest\Public\Components\Combat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\Combat\PawnCombatComponent.h">
+      <Filter>Source\TechnicalTest\Public\Components\Combat</Filter>
+    </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\Components\Input">
       <UniqueIdentifier>{B8CA54B2-77C9-3096-8B9E-5622B9EC73A9}</UniqueIdentifier>
     </Filter>

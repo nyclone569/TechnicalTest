@@ -5,7 +5,7 @@
 
 UInputAction* UDataAsset_InputConfig::FindNativeInputActionByTag(const FGameplayTag& InInputTag) const
 {
-	for(const FTechInputActionConfig& InputActionConfig : NativeInputActions)
+	for(const FMyInputActionConfig& InputActionConfig : NativeInputActions)
 	{
 		if(InputActionConfig.InputTag == InInputTag && InputActionConfig.InputAction)
 		{

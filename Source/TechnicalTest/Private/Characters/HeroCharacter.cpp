@@ -12,6 +12,7 @@
 #include "MyGamePlayTags.h"
 #include "AbilitySystem/MyAbilitySystemComponent.h"
 #include "DataAssets/StartUpData/DataAsset_HeroStartUpData.h"
+#include "Components/Combat/HeroCombatComponent.h"
 
 #include "DebugHelper.h"
 
@@ -38,6 +39,8 @@ AHeroCharacter::AHeroCharacter()
 	GetCharacterMovement()->RotationRate = FRotator(0.f, 500.f, 0.f);
 	GetCharacterMovement()->MaxWalkSpeed = 400.f;
 	GetCharacterMovement()->BrakingDecelerationWalking = 2000.f;
+
+	HeroCombatComponent = CreateDefaultSubobject<UHeroCombatComponent>(TEXT("HeroCombatComponent"));
 }
 
 void AHeroCharacter::PossessedBy(AController* NewController)
@@ -65,6 +68,8 @@ void AHeroCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompo
 	UMyInputComponent* MyInputComponent = CastChecked<UMyInputComponent>(PlayerInputComponent);
 	MyInputComponent->BindNativeInputAction(InputConfigDataAsset, MyGamePlayTags::InputTag_Move, ETriggerEvent::Triggered, this, &ThisClass::Input_Move);
 	MyInputComponent->BindNativeInputAction(InputConfigDataAsset, MyGamePlayTags::InputTag_Look, ETriggerEvent::Triggered, this, &ThisClass::Input_Look);
+
+	MyInputComponent->BindAbilityInputAction(InputConfigDataAsset, this, &ThisClass::Input_AbilityInputPressed, &ThisClass::Input_AbilityInputReleased);
 }
 
 void AHeroCharacter::BeginPlay()
@@ -102,4 +107,15 @@ void AHeroCharacter::Input_Look(const FInputActionValue& InputActionValue)
 	{
 		AddControllerPitchInput(LookAxisVector.Y);
 	}
+}
+
+void AHeroCharacter::Input_AbilityInputPressed(FGameplayTag InInputTag)
+{
+	MyAbilitySystemComponent->OnAbilityInputPressed(InInputTag);
+}
+
+void AHeroCharacter::Input_AbilityInputReleased(FGameplayTag InInputTag)
+{
+	MyAbilitySystemComponent->OnAbilityInputReleased(InInputTag);
+
 }

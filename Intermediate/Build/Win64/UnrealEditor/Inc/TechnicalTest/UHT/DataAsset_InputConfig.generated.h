@@ -16,19 +16,19 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
-// ********** Begin ScriptStruct FTechInputActionConfig ********************************************
+// ********** Begin ScriptStruct FMyInputActionConfig **********************************************
 #define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_16_GENERATED_BODY \
-	friend struct Z_Construct_UScriptStruct_FTechInputActionConfig_Statics; \
+	friend struct Z_Construct_UScriptStruct_FMyInputActionConfig_Statics; \
 	TECHNICALTEST_API static class UScriptStruct* StaticStruct();
 
 
-struct FTechInputActionConfig;
-// ********** End ScriptStruct FTechInputActionConfig **********************************************
+struct FMyInputActionConfig;
+// ********** End ScriptStruct FMyInputActionConfig ************************************************
 
 // ********** Begin Class UDataAsset_InputConfig ***************************************************
 TECHNICALTEST_API UClass* Z_Construct_UClass_UDataAsset_InputConfig_NoRegister();
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_31_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_36_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUDataAsset_InputConfig(); \
 	friend struct Z_Construct_UClass_UDataAsset_InputConfig_Statics; \
@@ -39,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(UDataAsset_InputConfig)
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_31_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_36_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UDataAsset_InputConfig(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -51,12 +51,12 @@ public: \
 	NO_API virtual ~UDataAsset_InputConfig();
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_28_PROLOG
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_31_GENERATED_BODY \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_33_PROLOG
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_36_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_31_INCLASS_NO_PURE_DECLS \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_31_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_36_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_DataAssets_Input_DataAsset_InputConfig_h_36_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

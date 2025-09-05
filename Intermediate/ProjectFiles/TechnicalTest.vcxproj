@@ -274,6 +274,9 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\MyAttributeSet.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\HeroGameplayAbility.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\MyGameplayAbility.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
@@ -293,6 +296,15 @@
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\Characters\HeroCharacter.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\PawnExtentionComponentBase.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\Combat\HeroCombatComponent.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\Combat\PawnCombatComponent.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\Input\MyInputComponent.cpp">
@@ -323,6 +335,7 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\MyGamePlayTags.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\MyAbilitySystemComponent.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\MyAttributeSet.h"/>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\HeroGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\MyGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AnimInstances\BaseAnimInstance.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AnimInstances\CharacterAnimInstance.h"/>
@@ -330,6 +343,9 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AnimInstances\Hero\HeroLinkedAnimLayer.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\BaseCharacter.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\HeroCharacter.h"/>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\PawnExtentionComponentBase.h"/>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\Combat\HeroCombatComponent.h"/>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\Combat\PawnCombatComponent.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\Input\MyInputComponent.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Controllers\HeroController.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\DataAssets\Input\DataAsset_InputConfig.h"/>

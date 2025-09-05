@@ -14,4 +14,7 @@ class TECHNICALTEST_API UMyAbilitySystemComponent : public UAbilitySystemCompone
 {
 	GENERATED_BODY()
 	
+public:
+	void OnAbilityInputPressed(const FGameplayTag& InInputTag);
+	void OnAbilityInputReleased(const FGameplayTag& InInputTag);
 };
