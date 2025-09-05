@@ -156,6 +156,12 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\Items\Weapons\MyWeaponBase.cpp">
       <Filter>Source\TechnicalTest\Private\Items\Weapons</Filter>
     </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\MyTypes">
+      <UniqueIdentifier>{CCCF9C10-4BD8-3FB2-B084-5B70700F0315}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\MyTypes\MyStuctTypes.cpp">
+      <Filter>Source\TechnicalTest\Private\MyTypes</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Public">
       <UniqueIdentifier>{3E8CC690-3A91-307D-9992-43F46D69FB6E}</UniqueIdentifier>
     </Filter>
@@ -272,6 +278,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Items\Weapons\MyWeaponBase.h">
       <Filter>Source\TechnicalTest\Public\Items\Weapons</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\MyTypes">
+      <UniqueIdentifier>{7B02F8BA-0178-3087-AFD6-3BA2E705A7B1}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\MyTypes\MyStuctTypes.h">
+      <Filter>Source\TechnicalTest\Public\MyTypes</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

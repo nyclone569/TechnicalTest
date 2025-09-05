@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Items/Weapons/MyWeaponBase.h"
+#include "MyTypes/MyStuctTypes.h"
 #include "HeroWeapon.generated.h"
 
 /**
@@ -14,4 +15,7 @@ class TECHNICALTEST_API AHeroWeapon : public AMyWeaponBase
 {
 	GENERATED_BODY()
 	
+public:
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "WeaponData")
+	FHeroWeaponData HeroWeaponData;
 };
