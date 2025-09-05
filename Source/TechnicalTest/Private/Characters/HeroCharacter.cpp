@@ -11,6 +11,7 @@
 #include "Components/Input/MyInputComponent.h"
 #include "MyGamePlayTags.h"
 #include "AbilitySystem/MyAbilitySystemComponent.h"
+#include "DataAssets/StartUpData/DataAsset_HeroStartUpData.h"
 
 #include "DebugHelper.h"
 
@@ -43,11 +44,10 @@ void AHeroCharacter::PossessedBy(AController* NewController)
 {
 	Super::PossessedBy(NewController);
 
-	if(MyAbilitySystemComponent && MyAttributeSet)
-	{
-		const FString ASCText = FString::Printf(TEXT("Owner Actor: %s, Avatar Actor: %s"), *MyAbilitySystemComponent->GetOwnerActor()->GetActorLabel(), *MyAbilitySystemComponent->GetAvatarActor()->GetActorLabel());
-		Debug::Print(TEXT("Ability system component valid. ") + ASCText, FColor::Green);
-		Debug::Print(TEXT("Attribute set valid. "), FColor::Green);
+	if (!CharacterStartUpData.IsNull()) {
+		if (UDataAsset_StartUpDataBase* LoadedData = CharacterStartUpData.LoadSynchronous()) {
+			LoadedData->GiveToAbilitySystemComponent(MyAbilitySystemComponent);
+		}
 	}
 }
 

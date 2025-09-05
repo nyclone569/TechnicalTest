@@ -9,6 +9,7 @@
 
 class UMyAbilitySystemComponent;
 class UMyAttributeSet;
+class UDataAsset_StartUpDataBase;
 
 UCLASS()
 class TECHNICALTEST_API ABaseCharacter : public ACharacter, public IAbilitySystemInterface
@@ -19,7 +20,7 @@ public:
 	// Sets default values for this character's properties
 	ABaseCharacter();
 	//~ Begin IAbilitySystemInterface Interface
-	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const;
+	virtual UAbilitySystemComponent* GetAbilitySystemComponent() const override;
 	//~ End IAbilitySystemInterface Interface
 
 protected:
@@ -34,6 +35,8 @@ protected:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "AbilitySystem")
 	UMyAttributeSet* MyAttributeSet;
 
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "CharacterData")
+	TSoftObjectPtr<UDataAsset_StartUpDataBase> CharacterStartUpData;
 public:
 	FORCEINLINE UMyAbilitySystemComponent* GetMyAbilitySystemComponent() const { return MyAbilitySystemComponent; }
 

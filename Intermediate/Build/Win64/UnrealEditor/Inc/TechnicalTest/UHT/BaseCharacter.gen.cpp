@@ -16,6 +16,7 @@ ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemInterface_NoRegister();
 TECHNICALTEST_API UClass* Z_Construct_UClass_ABaseCharacter();
 TECHNICALTEST_API UClass* Z_Construct_UClass_ABaseCharacter_NoRegister();
+TECHNICALTEST_API UClass* Z_Construct_UClass_UDataAsset_StartUpDataBase_NoRegister();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyAbilitySystemComponent_NoRegister();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyAttributeSet_NoRegister();
 UPackage* Z_Construct_UPackage__Script_TechnicalTest();
@@ -75,9 +76,14 @@ struct Z_Construct_UClass_ABaseCharacter_Statics
 		{ "EditInline", "true" },
 		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CharacterStartUpData_MetaData[] = {
+		{ "Category", "CharacterData" },
+		{ "ModuleRelativePath", "Public/Characters/BaseCharacter.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MyAbilitySystemComponent;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MyAttributeSet;
+	static const UECodeGen_Private::FSoftObjectPropertyParams NewProp_CharacterStartUpData;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
@@ -88,9 +94,11 @@ struct Z_Construct_UClass_ABaseCharacter_Statics
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_MyAbilitySystemComponent = { "MyAbilitySystemComponent", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacter, MyAbilitySystemComponent), Z_Construct_UClass_UMyAbilitySystemComponent_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MyAbilitySystemComponent_MetaData), NewProp_MyAbilitySystemComponent_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_MyAttributeSet = { "MyAttributeSet", nullptr, (EPropertyFlags)0x00200800000a001d, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacter, MyAttributeSet), Z_Construct_UClass_UMyAttributeSet_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MyAttributeSet_MetaData), NewProp_MyAttributeSet_MetaData) };
+const UECodeGen_Private::FSoftObjectPropertyParams Z_Construct_UClass_ABaseCharacter_Statics::NewProp_CharacterStartUpData = { "CharacterStartUpData", nullptr, (EPropertyFlags)0x0024080000010015, UECodeGen_Private::EPropertyGenFlags::SoftObject, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ABaseCharacter, CharacterStartUpData), Z_Construct_UClass_UDataAsset_StartUpDataBase_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CharacterStartUpData_MetaData), NewProp_CharacterStartUpData_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ABaseCharacter_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_MyAbilitySystemComponent,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_MyAttributeSet,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ABaseCharacter_Statics::NewProp_CharacterStartUpData,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_ABaseCharacter_Statics::DependentSingletons[])() = {
@@ -132,10 +140,10 @@ ABaseCharacter::~ABaseCharacter() {}
 struct Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h__Script_TechnicalTest_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 297325584U) },
+		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 797331093U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h__Script_TechnicalTest_2319359430(TEXT("/Script/TechnicalTest"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h__Script_TechnicalTest_1952879061(TEXT("/Script/TechnicalTest"),
 	Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h__Script_TechnicalTest_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h__Script_TechnicalTest_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

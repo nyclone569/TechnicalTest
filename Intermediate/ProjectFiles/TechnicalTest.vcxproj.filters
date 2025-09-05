@@ -114,11 +114,32 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\DataAssets\Input\DataAsset_InputConfig.cpp">
       <Filter>Source\TechnicalTest\Private\DataAssets\Input</Filter>
     </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\DataAssets\StartUpData">
+      <UniqueIdentifier>{4612010E-A8AF-3092-8086-1137ADA8FEBD}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\DataAssets\StartUpData\DataAsset_HeroStartUpData.cpp">
+      <Filter>Source\TechnicalTest\Private\DataAssets\StartUpData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\DataAssets\StartUpData\DataAsset_StartUpDataBase.cpp">
+      <Filter>Source\TechnicalTest\Private\DataAssets\StartUpData</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\GameModes">
       <UniqueIdentifier>{61F4A6CC-2653-361B-8C0F-33BB9E036655}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\GameModes\BaseGameMode.cpp">
       <Filter>Source\TechnicalTest\Private\GameModes</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\Items">
+      <UniqueIdentifier>{6B66D2EF-E8AD-342D-A6C5-FC491F2C10E4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\TechnicalTest\Private\Items\Weapons">
+      <UniqueIdentifier>{DF7C4DE4-6B9D-3B6B-8568-8230086090E3}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Items\Weapons\HeroWeapon.cpp">
+      <Filter>Source\TechnicalTest\Private\Items\Weapons</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Items\Weapons\MyWeaponBase.cpp">
+      <Filter>Source\TechnicalTest\Private\Items\Weapons</Filter>
     </ClCompile>
     <Filter Include="Source\TechnicalTest\Public">
       <UniqueIdentifier>{3E8CC690-3A91-307D-9992-43F46D69FB6E}</UniqueIdentifier>
@@ -195,11 +216,32 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\DataAssets\Input\DataAsset_InputConfig.h">
       <Filter>Source\TechnicalTest\Public\DataAssets\Input</Filter>
     </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\DataAssets\StartUpData">
+      <UniqueIdentifier>{C2941707-3CAB-38E3-9D7D-E383DACA618C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\DataAssets\StartUpData\DataAsset_HeroStartUpData.h">
+      <Filter>Source\TechnicalTest\Public\DataAssets\StartUpData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\DataAssets\StartUpData\DataAsset_StartUpDataBase.h">
+      <Filter>Source\TechnicalTest\Public\DataAssets\StartUpData</Filter>
+    </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\GameModes">
       <UniqueIdentifier>{983A79A7-997D-39FD-B34A-3357C715824A}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\GameModes\BaseGameMode.h">
       <Filter>Source\TechnicalTest\Public\GameModes</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\Items">
+      <UniqueIdentifier>{C01FA098-5A19-317F-86EC-8E8E46876882}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\TechnicalTest\Public\Items\Weapons">
+      <UniqueIdentifier>{6AF297F4-5A03-3CE1-A08E-F53F507BE807}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Items\Weapons\HeroWeapon.h">
+      <Filter>Source\TechnicalTest\Public\Items\Weapons</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Items\Weapons\MyWeaponBase.h">
+      <Filter>Source\TechnicalTest\Public\Items\Weapons</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
