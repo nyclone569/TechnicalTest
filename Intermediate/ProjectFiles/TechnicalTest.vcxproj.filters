@@ -45,6 +45,9 @@
     <Filter Include="Source\TechnicalTest\Private">
       <UniqueIdentifier>{D36B2B34-9342-359A-BB56-B6BC934AB882}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\MyFunctionLibrary.cpp">
+      <Filter>Source\TechnicalTest\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\MyGamePlayTags.cpp">
       <Filter>Source\TechnicalTest\Private</Filter>
     </ClCompile>
@@ -166,6 +169,9 @@
       <UniqueIdentifier>{3E8CC690-3A91-307D-9992-43F46D69FB6E}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\DebugHelper.h">
+      <Filter>Source\TechnicalTest\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\MyFunctionLibrary.h">
       <Filter>Source\TechnicalTest\Public</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\MyGamePlayTags.h">

@@ -2,7 +2,7 @@
 
 
 #include "MyTypes/MyStuctTypes.h"
-#include "AbilitySystem/Abilities/MyGameplayAbility.h"
+#include "AbilitySystem/Abilities/HeroGameplayAbility.h"
 
 
 bool FHeroAbilitySet::IsValid() const

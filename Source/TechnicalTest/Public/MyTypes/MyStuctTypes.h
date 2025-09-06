@@ -5,7 +5,7 @@
 #include "MyStuctTypes.generated.h"
 
 class UHeroLinkedAnimLayer;
-class UMyGameplayAbility;
+class UHeroGameplayAbility;
 class UInputMappingContext;
 
 USTRUCT(BlueprintType)
@@ -17,7 +17,7 @@ struct FHeroAbilitySet
 	FGameplayTag InputTag;
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly)
-	TSubclassOf<UMyGameplayAbility> AbilityToGrant;
+	TSubclassOf<UHeroGameplayAbility> AbilityToGrant;
 
 	bool IsValid() const;
 };
