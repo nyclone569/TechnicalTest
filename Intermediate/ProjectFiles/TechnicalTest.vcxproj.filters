@@ -63,6 +63,9 @@
     <Filter Include="Source\TechnicalTest\Private\AbilitySystem\Abilities">
       <UniqueIdentifier>{3BB979DD-468B-3787-A528-B0FEC2738D12}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\EnemyGameplayAbility.cpp">
+      <Filter>Source\TechnicalTest\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\HeroGameplayAbility.cpp">
       <Filter>Source\TechnicalTest\Private\AbilitySystem\Abilities</Filter>
     </ClCompile>
@@ -96,6 +99,9 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\Characters\HeroCharacter.cpp">
       <Filter>Source\TechnicalTest\Private\Characters</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Characters\EnemyCharacter.cpp">
+      <Filter>Source\TechnicalTest\Private\Characters</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\Components">
       <UniqueIdentifier>{E6CAECC2-26D7-3B0C-9022-32CFC7F2D8DC}</UniqueIdentifier>
     </Filter>
@@ -105,6 +111,9 @@
     <Filter Include="Source\TechnicalTest\Private\Components\Combat">
       <UniqueIdentifier>{A452657D-1752-391A-B297-01A57D34899A}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\Combat\EnemyCombatComponent.cpp">
+      <Filter>Source\TechnicalTest\Private\Components\Combat</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\Combat\HeroCombatComponent.cpp">
       <Filter>Source\TechnicalTest\Private\Components\Combat</Filter>
     </ClCompile>
@@ -135,6 +144,9 @@
     <Filter Include="Source\TechnicalTest\Private\DataAssets\StartUpData">
       <UniqueIdentifier>{4612010E-A8AF-3092-8086-1137ADA8FEBD}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\DataAssets\StartUpData\DataAsset_EnemyStartUpData.cpp">
+      <Filter>Source\TechnicalTest\Private\DataAssets\StartUpData</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\DataAssets\StartUpData\DataAsset_HeroStartUpData.cpp">
       <Filter>Source\TechnicalTest\Private\DataAssets\StartUpData</Filter>
     </ClCompile>
@@ -189,6 +201,9 @@
     <Filter Include="Source\TechnicalTest\Public\AbilitySystem\Abilities">
       <UniqueIdentifier>{6E3844AA-CD51-3C1E-B9BA-FA1F9F3A0FEE}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\EnemyGameplayAbility.h">
+      <Filter>Source\TechnicalTest\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\HeroGameplayAbility.h">
       <Filter>Source\TechnicalTest\Public\AbilitySystem\Abilities</Filter>
     </ClInclude>
@@ -222,6 +237,9 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\HeroCharacter.h">
       <Filter>Source\TechnicalTest\Public\Characters</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\EnemyCharacter.h">
+      <Filter>Source\TechnicalTest\Public\Characters</Filter>
+    </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\Components">
       <UniqueIdentifier>{CAFC4ADB-76F3-3DAC-87D1-400042B8F883}</UniqueIdentifier>
     </Filter>
@@ -231,6 +249,9 @@
     <Filter Include="Source\TechnicalTest\Public\Components\Combat">
       <UniqueIdentifier>{9508505E-6D07-3517-9413-B7425B3BDDBF}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\Combat\EnemyCombatComponent.h">
+      <Filter>Source\TechnicalTest\Public\Components\Combat</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\Combat\HeroCombatComponent.h">
       <Filter>Source\TechnicalTest\Public\Components\Combat</Filter>
     </ClInclude>
@@ -261,6 +282,9 @@
     <Filter Include="Source\TechnicalTest\Public\DataAssets\StartUpData">
       <UniqueIdentifier>{C2941707-3CAB-38E3-9D7D-E383DACA618C}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\DataAssets\StartUpData\DataAsset_EnemyStartUpData.h">
+      <Filter>Source\TechnicalTest\Public\DataAssets\StartUpData</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\DataAssets\StartUpData\DataAsset_HeroStartUpData.h">
       <Filter>Source\TechnicalTest\Public\DataAssets\StartUpData</Filter>
     </ClInclude>

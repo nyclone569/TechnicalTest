@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class UMyAttributeSet **********************************************************
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyAttributeSet_NoRegister();
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_22_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUMyAttributeSet(); \
 	friend struct Z_Construct_UClass_UMyAttributeSet_Statics; \
@@ -30,24 +30,22 @@ public: \
 	DECLARE_SERIALIZER(UMyAttributeSet)
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_15_ENHANCED_CONSTRUCTORS \
-	/** Standard constructor, called after all reflected properties have been initialized */ \
-	NO_API UMyAttributeSet(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_22_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	UMyAttributeSet(UMyAttributeSet&&) = delete; \
 	UMyAttributeSet(const UMyAttributeSet&) = delete; \
 	DECLARE_VTABLE_PTR_HELPER_CTOR(NO_API, UMyAttributeSet); \
 	DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(UMyAttributeSet); \
-	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(UMyAttributeSet) \
+	DEFINE_DEFAULT_CONSTRUCTOR_CALL(UMyAttributeSet) \
 	NO_API virtual ~UMyAttributeSet();
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_12_PROLOG
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_15_GENERATED_BODY \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_19_PROLOG
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_22_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_22_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_22_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -8,6 +8,7 @@
 
 class UMyGameplayAbility;
 class UMyAbilitySystemComponent;
+class UGameplayEffect;
 /**
  * 
  */
@@ -25,6 +26,9 @@ protected:
 
 	UPROPERTY(EditDefaultsOnly, Category = "StartUpData")
 	TArray<TSubclassOf<UMyGameplayAbility>>ReactiveAbilities;
+
+	UPROPERTY(EditDefaultsOnly, Category = "StartUpData")
+	TArray<TSubclassOf<UGameplayEffect>> StartUpGameplayEffects;
 
 	void GrantAbilities(const TArray<TSubclassOf<UMyGameplayAbility>>& InAbilitiesToGive, UMyAbilitySystemComponent* InASCToGive, int32 ApplyLevel = 1);
 };
