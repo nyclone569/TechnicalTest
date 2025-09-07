@@ -27,10 +27,7 @@ void UMyGameplayAbility::EndAbility(const FGameplayAbilitySpecHandle Handle, con
 	{
 		if(ActorInfo)
 		{
-			if(UMyAbilitySystemComponent* MyASC = Cast<UMyAbilitySystemComponent>(ActorInfo->AbilitySystemComponent.Get()))
-			{
-				ActorInfo->AbilitySystemComponent->ClearAbility(Handle);
-			}
+			ActorInfo->AbilitySystemComponent->ClearAbility(Handle);
 		}
 	}
 }

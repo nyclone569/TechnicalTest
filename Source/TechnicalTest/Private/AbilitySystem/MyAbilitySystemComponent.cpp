@@ -5,6 +5,8 @@
 #include "AbilitySystem/Abilities/HeroGameplayAbility.h"
 #include "AbilitySystem/Abilities/MyGameplayAbility.h"
 
+#include "DebugHelper.h"
+
 void UMyAbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& InInputTag)
 {
 	if (!InInputTag.IsValid()) {
@@ -13,7 +15,7 @@ void UMyAbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& InInpu
 
 	for (const FGameplayAbilitySpec& AbilitySpec : GetActivatableAbilities())
 	{
-		if (!AbilitySpec.DynamicAbilityTags.HasTagExact(InInputTag)) continue;
+		if (!AbilitySpec.GetDynamicSpecSourceTags().HasTagExact(InInputTag)) continue;
 
 		TryActivateAbility(AbilitySpec.Handle);
 	}
@@ -37,7 +39,7 @@ void UMyAbilitySystemComponent::GrantHeroWeaponAbilities(const TArray<FHeroAbili
 		FGameplayAbilitySpec AbilitySpec(AbilitySet.AbilityToGrant);
 		AbilitySpec.SourceObject = GetAvatarActor();
 		AbilitySpec.Level = ApplyLevel;
-		AbilitySpec.DynamicAbilityTags.AddTag(AbilitySet.InputTag);
+		AbilitySpec.GetDynamicSpecSourceTags().AddTag(AbilitySet.InputTag);
 
 		OutGrantedAbilitySpecHandles.AddUnique(GiveAbility(AbilitySpec));
 	}
