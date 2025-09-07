@@ -2,6 +2,7 @@
 
 
 #include "AbilitySystem/MyAbilitySystemComponent.h"
+#include "AbilitySystem/Abilities/HeroGameplayAbility.h"
 #include "AbilitySystem/Abilities/MyGameplayAbility.h"
 
 void UMyAbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& InInputTag)

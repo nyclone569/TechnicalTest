@@ -72,6 +72,12 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\MyGameplayAbility.cpp">
       <Filter>Source\TechnicalTest\Private\AbilitySystem\Abilities</Filter>
     </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\AbilitySystem\GEExecCalc">
+      <UniqueIdentifier>{5FAA9A79-36DB-3A33-997C-B072E1ED2B3D}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.cpp">
+      <Filter>Source\TechnicalTest\Private\AbilitySystem\GEExecCalc</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\AnimInstances">
       <UniqueIdentifier>{786B81A0-EE93-3A66-AFF6-F8AD0CF7C3B7}</UniqueIdentifier>
     </Filter>
@@ -96,10 +102,10 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\Characters\BaseCharacter.cpp">
       <Filter>Source\TechnicalTest\Private\Characters</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\TechnicalTest\Private\Characters\HeroCharacter.cpp">
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Characters\EnemyCharacter.cpp">
       <Filter>Source\TechnicalTest\Private\Characters</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\Source\TechnicalTest\Private\Characters\EnemyCharacter.cpp">
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Characters\HeroCharacter.cpp">
       <Filter>Source\TechnicalTest\Private\Characters</Filter>
     </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\Components">
@@ -159,6 +165,12 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\GameModes\BaseGameMode.cpp">
       <Filter>Source\TechnicalTest\Private\GameModes</Filter>
     </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\Interfaces">
+      <UniqueIdentifier>{199867BB-C5E6-3B56-81EA-984AF78863C9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Interfaces\PawnCombatInterface.cpp">
+      <Filter>Source\TechnicalTest\Private\Interfaces</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\Items">
       <UniqueIdentifier>{6B66D2EF-E8AD-342D-A6C5-FC491F2C10E4}</UniqueIdentifier>
     </Filter>
@@ -210,6 +222,12 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\MyGameplayAbility.h">
       <Filter>Source\TechnicalTest\Public\AbilitySystem\Abilities</Filter>
     </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\AbilitySystem\GEExecCalc">
+      <UniqueIdentifier>{17A926F6-560E-3E3C-94F4-D714AF55B855}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.h">
+      <Filter>Source\TechnicalTest\Public\AbilitySystem\GEExecCalc</Filter>
+    </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\AnimInstances">
       <UniqueIdentifier>{8EA73105-6A2D-31C6-8FD6-8450DC737BB2}</UniqueIdentifier>
     </Filter>
@@ -234,10 +252,10 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\BaseCharacter.h">
       <Filter>Source\TechnicalTest\Public\Characters</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\HeroCharacter.h">
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\EnemyCharacter.h">
       <Filter>Source\TechnicalTest\Public\Characters</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\EnemyCharacter.h">
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Characters\HeroCharacter.h">
       <Filter>Source\TechnicalTest\Public\Characters</Filter>
     </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\Components">
@@ -297,6 +315,12 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\GameModes\BaseGameMode.h">
       <Filter>Source\TechnicalTest\Public\GameModes</Filter>
     </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\Interfaces">
+      <UniqueIdentifier>{2C1704FD-D9AC-3E8F-8A12-C8335E51D331}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Interfaces\PawnCombatInterface.h">
+      <Filter>Source\TechnicalTest\Public\Interfaces</Filter>
+    </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\Items">
       <UniqueIdentifier>{C01FA098-5A19-317F-86EC-8E8E46876882}</UniqueIdentifier>
     </Filter>
@@ -312,6 +336,9 @@
     <Filter Include="Source\TechnicalTest\Public\MyTypes">
       <UniqueIdentifier>{7B02F8BA-0178-3087-AFD6-3BA2E705A7B1}</UniqueIdentifier>
     </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\MyTypes\MyEnumTypes.h">
+      <Filter>Source\TechnicalTest\Public\MyTypes</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\MyTypes\MyStuctTypes.h">
       <Filter>Source\TechnicalTest\Public\MyTypes</Filter>
     </ClInclude>

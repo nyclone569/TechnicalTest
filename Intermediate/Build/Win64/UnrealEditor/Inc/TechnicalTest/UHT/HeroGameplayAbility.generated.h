@@ -18,10 +18,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 class AHeroCharacter;
 class AHeroController;
+class UGameplayEffect;
 class UHeroCombatComponent;
+struct FGameplayEffectSpecHandle;
+struct FGameplayTag;
 
 // ********** Begin Class UHeroGameplayAbility *****************************************************
 #define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_HeroGameplayAbility_h_18_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execMakeHeroDamageEffectSpecHandle); \
 	DECLARE_FUNCTION(execGetHeroCombatComponentFromActorInfo); \
 	DECLARE_FUNCTION(execGetHeroControllerFromActorInfo); \
 	DECLARE_FUNCTION(execGetHeroCharacterFromActorInfo);

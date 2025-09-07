@@ -17,10 +17,12 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 class AMyWeaponBase;
+enum class EToggleDamageType : uint8;
 struct FGameplayTag;
 
 // ********** Begin Class UPawnCombatComponent *****************************************************
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execToggleWeaponCollision); \
 	DECLARE_FUNCTION(execGetCharacterCurrentEquippedWeapon); \
 	DECLARE_FUNCTION(execGetCharacterCarriedWeaponByTag); \
 	DECLARE_FUNCTION(execRegisterSpawnedWeapon);
@@ -28,7 +30,7 @@ struct FGameplayTag;
 
 TECHNICALTEST_API UClass* Z_Construct_UClass_UPawnCombatComponent_NoRegister();
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_17_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_25_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPawnCombatComponent(); \
 	friend struct Z_Construct_UClass_UPawnCombatComponent_Statics; \
@@ -39,7 +41,7 @@ public: \
 	DECLARE_SERIALIZER(UPawnCombatComponent)
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_17_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_25_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPawnCombatComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -51,13 +53,13 @@ public: \
 	NO_API virtual ~UPawnCombatComponent();
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_14_PROLOG
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_17_GENERATED_BODY \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_22_PROLOG
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_25_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_17_INCLASS_NO_PURE_DECLS \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_17_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_25_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_25_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h_25_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
@@ -68,5 +70,16 @@ class UPawnCombatComponent;
 
 #undef CURRENT_FILE_ID
 #define CURRENT_FILE_ID FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_PawnCombatComponent_h
+
+// ********** Begin Enum EToggleDamageType *********************************************************
+#define FOREACH_ENUM_ETOGGLEDAMAGETYPE(op) \
+	op(EToggleDamageType::CurrentEquippedWeapon) \
+	op(EToggleDamageType::LeftHand) \
+	op(EToggleDamageType::RightHand) 
+
+enum class EToggleDamageType : uint8;
+template<> struct TIsUEnumClass<EToggleDamageType> { enum { Value = true }; };
+template<> TECHNICALTEST_API UEnum* StaticEnum<EToggleDamageType>();
+// ********** End Enum EToggleDamageType ***********************************************************
 
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

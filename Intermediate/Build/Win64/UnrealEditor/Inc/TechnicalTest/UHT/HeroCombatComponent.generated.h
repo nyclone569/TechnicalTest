@@ -21,6 +21,8 @@ struct FGameplayTag;
 
 // ********** Begin Class UHeroCombatComponent *****************************************************
 #define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_Combat_HeroCombatComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execGetHeroCurrentEquippedWeaponDamageAtLevel); \
+	DECLARE_FUNCTION(execGetHeroCurrentEquippedWeapon); \
 	DECLARE_FUNCTION(execGetHeroCarriedWeaponByTag);
 
 

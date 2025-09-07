@@ -16,10 +16,19 @@
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
+class AActor;
+class UPrimitiveComponent;
+struct FHitResult;
+
 // ********** Begin Class AMyWeaponBase ************************************************************
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execOnCollisionBoxEndOverlap); \
+	DECLARE_FUNCTION(execOnCollisionBoxBeginOverlap);
+
+
 TECHNICALTEST_API UClass* Z_Construct_UClass_AMyWeaponBase_NoRegister();
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_15_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesAMyWeaponBase(); \
 	friend struct Z_Construct_UClass_AMyWeaponBase_Statics; \
@@ -30,7 +39,7 @@ public: \
 	DECLARE_SERIALIZER(AMyWeaponBase)
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_15_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_16_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	AMyWeaponBase(AMyWeaponBase&&) = delete; \
 	AMyWeaponBase(const AMyWeaponBase&) = delete; \
@@ -40,12 +49,13 @@ public: \
 	NO_API virtual ~AMyWeaponBase();
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_12_PROLOG
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_15_GENERATED_BODY \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_13_PROLOG
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_15_INCLASS_NO_PURE_DECLS \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_15_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_16_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Items_Weapons_MyWeaponBase_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

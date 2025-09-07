@@ -18,6 +18,10 @@ class TECHNICALTEST_API AEnemyCharacter : public ABaseCharacter
 public:
 	AEnemyCharacter();
 
+	//~ Begin PawnCombatInterface Interface
+	virtual UPawnCombatComponent* GetPawnCombatComponent() const override;
+	//~ End PawnCombatInterface Interface
+
 protected:
 	//~ Begin APawn Interface
 	virtual void PossessedBy(AController* NewController) override;

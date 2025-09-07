@@ -8,6 +8,14 @@
 #include "PawnCombatComponent.generated.h"
 
 class AMyWeaponBase;
+
+UENUM(BlueprintType)
+enum class EToggleDamageType : uint8
+{
+	CurrentEquippedWeapon,
+	LeftHand,
+	RightHand
+};
 /**
  * 
  */
@@ -18,16 +26,25 @@ class TECHNICALTEST_API UPawnCombatComponent : public UPawnExtentionComponentBas
 	
 public:
 	UFUNCTION(BlueprintCallable, Category = "Combat") 
-	void RegisterSpawnedWeapon(const FGameplayTag& InWeaponTagToRegister, AMyWeaponBase* InWeaponToRegister, bool bRegisterAsEquippedWeapon = false);
+	void RegisterSpawnedWeapon(FGameplayTag InWeaponTagToRegister, AMyWeaponBase* InWeaponToRegister, bool bRegisterAsEquippedWeapon = false);
 
 	UFUNCTION(BlueprintCallable, Category = "Combat")
-	AMyWeaponBase* GetCharacterCarriedWeaponByTag(const FGameplayTag InWeaponTagToGet) const;
+	AMyWeaponBase* GetCharacterCarriedWeaponByTag(FGameplayTag InWeaponTagToGet) const;
 
 	UPROPERTY(BlueprintReadWrite, Category = "Combat")
 	FGameplayTag CurrentEquippedWeaponTag;
 
 	UFUNCTION(BlueprintCallable, Category = "Combat")
 	AMyWeaponBase* GetCharacterCurrentEquippedWeapon() const;
+
+	UFUNCTION(BlueprintCallable, Category = "Combat")
+	void ToggleWeaponCollision(bool bShouldEnable, EToggleDamageType ToggleDamageType = EToggleDamageType::CurrentEquippedWeapon);
+
+	virtual void OnHitTargetActor(AActor* HitActor);
+	virtual void OnWeaponPulledFromTargetActor(AActor* InteractedActor);
+
+protected:
+	TArray<AActor* > OverlappedActors;
 
 private:
 	TMap<FGameplayTag, AMyWeaponBase*> CharacterCarriedWeaponMap;

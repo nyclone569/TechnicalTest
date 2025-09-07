@@ -6,18 +6,24 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "AbilitySystem/Abilities/MyGameplayAbility.h"
+#include "ActiveGameplayEffectHandle.h"
+#include "GameplayEffectTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 void EmptyLinkFunctionForGeneratedCodeMyGameplayAbility() {}
 
 // ********** Begin Cross Module References ********************************************************
+ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayAbility();
+GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FActiveGameplayEffectHandle();
+GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayEffectSpecHandle();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyAbilitySystemComponent_NoRegister();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyGameplayAbility();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyGameplayAbility_NoRegister();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UPawnCombatComponent_NoRegister();
 TECHNICALTEST_API UEnum* Z_Construct_UEnum_TechnicalTest_EMyAbilityActivaitonPolicy();
+TECHNICALTEST_API UEnum* Z_Construct_UEnum_TechnicalTest_EMySuccessType();
 UPackage* Z_Construct_UPackage__Script_TechnicalTest();
 // ********** End Cross Module References **********************************************************
 
@@ -72,6 +78,71 @@ UEnum* Z_Construct_UEnum_TechnicalTest_EMyAbilityActivaitonPolicy()
 	return Z_Registration_Info_UEnum_EMyAbilityActivaitonPolicy.InnerSingleton;
 }
 // ********** End Enum EMyAbilityActivaitonPolicy **************************************************
+
+// ********** Begin Class UMyGameplayAbility Function BP_ApplyEffectSpecHandleToTarget *************
+struct Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics
+{
+	struct MyGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms
+	{
+		AActor* TargetActor;
+		FGameplayEffectSpecHandle InSpecHandle;
+		EMySuccessType OutSuccessType;
+		FActiveGameplayEffectHandle ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ability" },
+		{ "DisplayName", "Apply Gameplay Effect Spec Handle To Target Actor" },
+		{ "ExpandEnumAsExecs", "OutSuccessType" },
+		{ "ModuleRelativePath", "Public/AbilitySystem/Abilities/MyGameplayAbility.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InSpecHandle_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetActor;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_InSpecHandle;
+	static const UECodeGen_Private::FBytePropertyParams NewProp_OutSuccessType_Underlying;
+	static const UECodeGen_Private::FEnumPropertyParams NewProp_OutSuccessType;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_TargetActor = { "TargetActor", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MyGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms, TargetActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_InSpecHandle = { "InSpecHandle", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MyGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms, InSpecHandle), Z_Construct_UScriptStruct_FGameplayEffectSpecHandle, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InSpecHandle_MetaData), NewProp_InSpecHandle_MetaData) }; // 4275563785
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_OutSuccessType_Underlying = { "UnderlyingType", nullptr, (EPropertyFlags)0x0000000000000000, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, 0, nullptr, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FEnumPropertyParams Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_OutSuccessType = { "OutSuccessType", nullptr, (EPropertyFlags)0x0010000000000180, UECodeGen_Private::EPropertyGenFlags::Enum, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MyGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms, OutSuccessType), Z_Construct_UEnum_TechnicalTest_EMySuccessType, METADATA_PARAMS(0, nullptr) }; // 2869745258
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MyGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms, ReturnValue), Z_Construct_UScriptStruct_FActiveGameplayEffectHandle, METADATA_PARAMS(0, nullptr) }; // 386907876
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_TargetActor,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_InSpecHandle,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_OutSuccessType_Underlying,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_OutSuccessType,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMyGameplayAbility, nullptr, "BP_ApplyEffectSpecHandleToTarget", Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::MyGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04480401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::MyGameplayAbility_eventBP_ApplyEffectSpecHandleToTarget_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UMyGameplayAbility::execBP_ApplyEffectSpecHandleToTarget)
+{
+	P_GET_OBJECT(AActor,Z_Param_TargetActor);
+	P_GET_STRUCT_REF(FGameplayEffectSpecHandle,Z_Param_Out_InSpecHandle);
+	P_GET_ENUM_REF(EMySuccessType,Z_Param_Out_OutSuccessType);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(FActiveGameplayEffectHandle*)Z_Param__Result=P_THIS->BP_ApplyEffectSpecHandleToTarget(Z_Param_TargetActor,Z_Param_Out_InSpecHandle,(EMySuccessType&)(Z_Param_Out_OutSuccessType));
+	P_NATIVE_END;
+}
+// ********** End Class UMyGameplayAbility Function BP_ApplyEffectSpecHandleToTarget ***************
 
 // ********** Begin Class UMyGameplayAbility Function GetMyAbilitySystemComponentFromActorInfo *****
 struct Z_Construct_UFunction_UMyGameplayAbility_GetMyAbilitySystemComponentFromActorInfo_Statics
@@ -168,6 +239,7 @@ void UMyGameplayAbility::StaticRegisterNativesUMyGameplayAbility()
 {
 	UClass* Class = UMyGameplayAbility::StaticClass();
 	static const FNameNativePtrPair Funcs[] = {
+		{ "BP_ApplyEffectSpecHandleToTarget", &UMyGameplayAbility::execBP_ApplyEffectSpecHandleToTarget },
 		{ "GetMyAbilitySystemComponentFromActorInfo", &UMyGameplayAbility::execGetMyAbilitySystemComponentFromActorInfo },
 		{ "GetPawnCombatComponentFromActorInfo", &UMyGameplayAbility::execGetPawnCombatComponentFromActorInfo },
 	};
@@ -225,6 +297,7 @@ struct Z_Construct_UClass_UMyGameplayAbility_Statics
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_UMyGameplayAbility_BP_ApplyEffectSpecHandleToTarget, "BP_ApplyEffectSpecHandleToTarget" }, // 4250371097
 		{ &Z_Construct_UFunction_UMyGameplayAbility_GetMyAbilitySystemComponentFromActorInfo, "GetMyAbilitySystemComponentFromActorInfo" }, // 1693899477
 		{ &Z_Construct_UFunction_UMyGameplayAbility_GetPawnCombatComponentFromActorInfo, "GetPawnCombatComponentFromActorInfo" }, // 697519271
 	};
@@ -281,10 +354,10 @@ struct Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalT
 		{ EMyAbilityActivaitonPolicy_StaticEnum, TEXT("EMyAbilityActivaitonPolicy"), &Z_Registration_Info_UEnum_EMyAbilityActivaitonPolicy, CONSTRUCT_RELOAD_VERSION_INFO(FEnumReloadVersionInfo, 4091003752U) },
 	};
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMyGameplayAbility, UMyGameplayAbility::StaticClass, TEXT("UMyGameplayAbility"), &Z_Registration_Info_UClass_UMyGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMyGameplayAbility), 2145493510U) },
+		{ Z_Construct_UClass_UMyGameplayAbility, UMyGameplayAbility::StaticClass, TEXT("UMyGameplayAbility"), &Z_Registration_Info_UClass_UMyGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMyGameplayAbility), 1965373808U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h__Script_TechnicalTest_4270512045(TEXT("/Script/TechnicalTest"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h__Script_TechnicalTest_1453791233(TEXT("/Script/TechnicalTest"),
 	Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h__Script_TechnicalTest_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h__Script_TechnicalTest_Statics::ClassInfo),
 	nullptr, 0,
 	Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h__Script_TechnicalTest_Statics::EnumInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_MyGameplayAbility_h__Script_TechnicalTest_Statics::EnumInfo));
