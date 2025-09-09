@@ -24,7 +24,7 @@ class TECHNICALTEST_API UMyAttributeSet : public UAttributeSet
 public:
 	UMyAttributeSet();
 
-	virtual void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data) override;
+	virtual void PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData &Data) override;
 
 	UPROPERTY(BlueprintReadOnly, Category = "Health")
 	FGameplayAttributeData CurrentHealth;

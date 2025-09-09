@@ -3,7 +3,6 @@
 
 #include "AbilitySystem/MyAbilitySystemComponent.h"
 #include "AbilitySystem/Abilities/HeroGameplayAbility.h"
-#include "AbilitySystem/Abilities/MyGameplayAbility.h"
 
 #include "DebugHelper.h"
 
