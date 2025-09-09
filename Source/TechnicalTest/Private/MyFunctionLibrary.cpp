@@ -16,7 +16,7 @@ void UMyFunctionLibrary::AddGameplayTagToActorIfNone(AActor* InActor, FGameplayT
 {
     UMyAbilitySystemComponent* ASC = NativeGetMyASCFromActor(InActor);
 
-    if (ASC->HasMatchingGameplayTag(TagToAdd))
+    if (!ASC->HasMatchingGameplayTag(TagToAdd))
     {
         ASC->AddLooseGameplayTag(TagToAdd);
     }

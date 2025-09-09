@@ -3,6 +3,8 @@
 
 #include "AbilitySystem/MyAttributeSet.h"
 #include "GameplayEffectExtension.h"
+#include "MyFunctionLibrary.h"
+#include "MyGamePlayTags.h"
 
 #include "DebugHelper.h"
 
@@ -51,10 +53,9 @@ void UMyAttributeSet::PostGameplayEffectExecute(const FGameplayEffectModCallback
 
 		//TODO: Notify the UI
 
-		//TODO: Handle character death
 		if (NewCurrentHealth == 0.f)
 		{
-
+			UMyFunctionLibrary::AddGameplayTagToActorIfNone(Data.Target.GetAvatarActor(), MyGamePlayTags::Shared_Status_Dead);
 		}
 	}
 }
