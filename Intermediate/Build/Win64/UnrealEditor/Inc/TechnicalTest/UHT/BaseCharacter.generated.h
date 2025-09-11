@@ -19,7 +19,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 // ********** Begin Class ABaseCharacter ***********************************************************
 TECHNICALTEST_API UClass* Z_Construct_UClass_ABaseCharacter_NoRegister();
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_18_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_19_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesABaseCharacter(); \
 	friend struct Z_Construct_UClass_ABaseCharacter_Statics; \
@@ -31,7 +31,7 @@ public: \
 	virtual UObject* _getUObject() const override { return const_cast<ABaseCharacter*>(this); }
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_18_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_19_ENHANCED_CONSTRUCTORS \
 	/** Deleted move- and copy-constructors, should never be used */ \
 	ABaseCharacter(ABaseCharacter&&) = delete; \
 	ABaseCharacter(const ABaseCharacter&) = delete; \
@@ -41,12 +41,12 @@ public: \
 	NO_API virtual ~ABaseCharacter();
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_15_PROLOG
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_18_GENERATED_BODY \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_16_PROLOG
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_19_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_18_INCLASS_NO_PURE_DECLS \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_18_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_19_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h_19_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

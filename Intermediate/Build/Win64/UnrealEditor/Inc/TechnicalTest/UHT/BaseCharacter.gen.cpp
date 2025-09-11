@@ -20,6 +20,7 @@ TECHNICALTEST_API UClass* Z_Construct_UClass_UDataAsset_StartUpDataBase_NoRegist
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyAbilitySystemComponent_NoRegister();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyAttributeSet_NoRegister();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UPawnCombatInterface_NoRegister();
+TECHNICALTEST_API UClass* Z_Construct_UClass_UPawnUIInterface_NoRegister();
 UPackage* Z_Construct_UPackage__Script_TechnicalTest();
 // ********** End Cross Module References **********************************************************
 
@@ -110,6 +111,7 @@ static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_ABaseCharacter_Statics::Dependen
 const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_ABaseCharacter_Statics::InterfaceParams[] = {
 	{ Z_Construct_UClass_UAbilitySystemInterface_NoRegister, (int32)VTABLE_OFFSET(ABaseCharacter, IAbilitySystemInterface), false },  // 1199015870
 	{ Z_Construct_UClass_UPawnCombatInterface_NoRegister, (int32)VTABLE_OFFSET(ABaseCharacter, IPawnCombatInterface), false },  // 2796828344
+	{ Z_Construct_UClass_UPawnUIInterface_NoRegister, (int32)VTABLE_OFFSET(ABaseCharacter, IPawnUIInterface), false },  // 2104502764
 };
 const UECodeGen_Private::FClassParams Z_Construct_UClass_ABaseCharacter_Statics::ClassParams = {
 	&ABaseCharacter::StaticClass,
@@ -142,10 +144,10 @@ ABaseCharacter::~ABaseCharacter() {}
 struct Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h__Script_TechnicalTest_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 3521417196U) },
+		{ Z_Construct_UClass_ABaseCharacter, ABaseCharacter::StaticClass, TEXT("ABaseCharacter"), &Z_Registration_Info_UClass_ABaseCharacter, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(ABaseCharacter), 2127221633U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h__Script_TechnicalTest_1788858995(TEXT("/Script/TechnicalTest"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h__Script_TechnicalTest_2322285362(TEXT("/Script/TechnicalTest"),
 	Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h__Script_TechnicalTest_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Characters_BaseCharacter_h__Script_TechnicalTest_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

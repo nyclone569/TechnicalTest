@@ -12,6 +12,7 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeHeroController() {}
 
 // ********** Begin Cross Module References ********************************************************
+AIMODULE_API UClass* Z_Construct_UClass_UGenericTeamAgentInterface_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_APlayerController();
 TECHNICALTEST_API UClass* Z_Construct_UClass_AHeroController();
 TECHNICALTEST_API UClass* Z_Construct_UClass_AHeroController_NoRegister();
@@ -64,6 +65,7 @@ struct Z_Construct_UClass_AHeroController_Statics
 	};
 #endif // WITH_METADATA
 	static UObject* (*const DependentSingletons[])();
+	static const UECodeGen_Private::FImplementedInterfaceParams InterfaceParams[];
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AHeroController>::IsAbstract,
 	};
@@ -74,6 +76,9 @@ UObject* (*const Z_Construct_UClass_AHeroController_Statics::DependentSingletons
 	(UObject* (*)())Z_Construct_UPackage__Script_TechnicalTest,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_AHeroController_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FImplementedInterfaceParams Z_Construct_UClass_AHeroController_Statics::InterfaceParams[] = {
+	{ Z_Construct_UClass_UGenericTeamAgentInterface_NoRegister, (int32)VTABLE_OFFSET(AHeroController, IGenericTeamAgentInterface), false },  // 657866642
+};
 const UECodeGen_Private::FClassParams Z_Construct_UClass_AHeroController_Statics::ClassParams = {
 	&AHeroController::StaticClass,
 	"Game",
@@ -81,11 +86,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_AHeroController_Statics
 	DependentSingletons,
 	nullptr,
 	nullptr,
-	nullptr,
+	InterfaceParams,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
 	0,
-	0,
+	UE_ARRAY_COUNT(InterfaceParams),
 	0x009003A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AHeroController_Statics::Class_MetaDataParams), Z_Construct_UClass_AHeroController_Statics::Class_MetaDataParams)
 };
@@ -97,7 +102,6 @@ UClass* Z_Construct_UClass_AHeroController()
 	}
 	return Z_Registration_Info_UClass_AHeroController.OuterSingleton;
 }
-AHeroController::AHeroController(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
 DEFINE_VTABLE_PTR_HELPER_CTOR(AHeroController);
 AHeroController::~AHeroController() {}
 // ********** End Class AHeroController ************************************************************
@@ -106,10 +110,10 @@ AHeroController::~AHeroController() {}
 struct Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Controllers_HeroController_h__Script_TechnicalTest_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_AHeroController, AHeroController::StaticClass, TEXT("AHeroController"), &Z_Registration_Info_UClass_AHeroController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHeroController), 2719139516U) },
+		{ Z_Construct_UClass_AHeroController, AHeroController::StaticClass, TEXT("AHeroController"), &Z_Registration_Info_UClass_AHeroController, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AHeroController), 2008368854U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Controllers_HeroController_h__Script_TechnicalTest_1021716937(TEXT("/Script/TechnicalTest"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Controllers_HeroController_h__Script_TechnicalTest_2971003242(TEXT("/Script/TechnicalTest"),
 	Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Controllers_HeroController_h__Script_TechnicalTest_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Controllers_HeroController_h__Script_TechnicalTest_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

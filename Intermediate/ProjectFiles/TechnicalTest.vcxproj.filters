@@ -27,6 +27,9 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultGameplayTags.ini">
+      <Filter>Config</Filter>
+    </None>
     <None Include="..\..\Config\DefaultInput.ini">
       <Filter>Config</Filter>
     </None>
@@ -132,10 +135,25 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\Input\MyInputComponent.cpp">
       <Filter>Source\TechnicalTest\Private\Components\Input</Filter>
     </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\Components\UI">
+      <UniqueIdentifier>{AF47AC72-D102-35DE-B503-47105520A481}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\UI\EnemyUIComponent.cpp">
+      <Filter>Source\TechnicalTest\Private\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\UI\HeroUIComponent.cpp">
+      <Filter>Source\TechnicalTest\Private\Components\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Components\UI\PawnUIComponent.cpp">
+      <Filter>Source\TechnicalTest\Private\Components\UI</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\Controllers">
       <UniqueIdentifier>{75686FBB-2ADB-3594-838E-41F2F7F0327B}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\Controllers\HeroController.cpp">
+      <Filter>Source\TechnicalTest\Private\Controllers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Controllers\MyAIController.cpp">
       <Filter>Source\TechnicalTest\Private\Controllers</Filter>
     </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\DataAssets">
@@ -171,6 +189,9 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\Interfaces\PawnCombatInterface.cpp">
       <Filter>Source\TechnicalTest\Private\Interfaces</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Interfaces\PawnUIInterface.cpp">
+      <Filter>Source\TechnicalTest\Private\Interfaces</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\Items">
       <UniqueIdentifier>{6B66D2EF-E8AD-342D-A6C5-FC491F2C10E4}</UniqueIdentifier>
     </Filter>
@@ -188,6 +209,12 @@
     </Filter>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\MyTypes\MyStuctTypes.cpp">
       <Filter>Source\TechnicalTest\Private\MyTypes</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\Widget">
+      <UniqueIdentifier>{B9B6134A-48E4-3301-A23B-18FDAE6B69D5}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\Widget\WidgetBase.cpp">
+      <Filter>Source\TechnicalTest\Private\Widget</Filter>
     </ClCompile>
     <Filter Include="Source\TechnicalTest\Public">
       <UniqueIdentifier>{3E8CC690-3A91-307D-9992-43F46D69FB6E}</UniqueIdentifier>
@@ -282,10 +309,25 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\Input\MyInputComponent.h">
       <Filter>Source\TechnicalTest\Public\Components\Input</Filter>
     </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\Components\UI">
+      <UniqueIdentifier>{F07AEC35-770F-3176-A1BC-7E521B1CCB73}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\UI\EnemyUIComponent.h">
+      <Filter>Source\TechnicalTest\Public\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\UI\HeroUIComponent.h">
+      <Filter>Source\TechnicalTest\Public\Components\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Components\UI\PawnUIComponent.h">
+      <Filter>Source\TechnicalTest\Public\Components\UI</Filter>
+    </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\Controllers">
       <UniqueIdentifier>{5A0263CE-FE63-3DB1-BFAE-32A2F6E74570}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Controllers\HeroController.h">
+      <Filter>Source\TechnicalTest\Public\Controllers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Controllers\MyAIController.h">
       <Filter>Source\TechnicalTest\Public\Controllers</Filter>
     </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\DataAssets">
@@ -321,6 +363,9 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\Interfaces\PawnCombatInterface.h">
       <Filter>Source\TechnicalTest\Public\Interfaces</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Interfaces\PawnUIInterface.h">
+      <Filter>Source\TechnicalTest\Public\Interfaces</Filter>
+    </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\Items">
       <UniqueIdentifier>{C01FA098-5A19-317F-86EC-8E8E46876882}</UniqueIdentifier>
     </Filter>
@@ -341,6 +386,12 @@
     </ClInclude>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\MyTypes\MyStuctTypes.h">
       <Filter>Source\TechnicalTest\Public\MyTypes</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\Widget">
+      <UniqueIdentifier>{DCAD51E3-DE02-338C-95F0-C7EA1E87CE5A}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\Widget\WidgetBase.h">
+      <Filter>Source\TechnicalTest\Public\Widget</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
