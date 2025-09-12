@@ -81,6 +81,12 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.cpp">
       <Filter>Source\TechnicalTest\Private\AbilitySystem\GEExecCalc</Filter>
     </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\AI">
+      <UniqueIdentifier>{8594DF7A-4FEA-3F23-994B-9F1EAA265D38}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AI\BTService_OrientToTargetActor.cpp">
+      <Filter>Source\TechnicalTest\Private\AI</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\AnimInstances">
       <UniqueIdentifier>{786B81A0-EE93-3A66-AFF6-F8AD0CF7C3B7}</UniqueIdentifier>
     </Filter>
@@ -254,6 +260,12 @@
     </Filter>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.h">
       <Filter>Source\TechnicalTest\Public\AbilitySystem\GEExecCalc</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\AI">
+      <UniqueIdentifier>{9CAC8C59-F3AB-33DA-BC66-6CD69A5574F2}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AI\BTService_OrientToTargetActor.h">
+      <Filter>Source\TechnicalTest\Public\AI</Filter>
     </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\AnimInstances">
       <UniqueIdentifier>{8EA73105-6A2D-31C6-8FD6-8450DC737BB2}</UniqueIdentifier>
