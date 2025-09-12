@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "Kismet/BlueprintFunctionLibrary.h"
 #include "MyTypes/MyEnumTypes.h"
+#include "ScalableFloat.h"
 #include "MyFunctionLibrary.generated.h"
 
 class UMyAbilitySystemComponent;
@@ -40,4 +41,10 @@ public:
 
 	UFUNCTION(BlueprintPure, Category = "FunctionLibrary")
 	static bool IsTargetPawnHostile(APawn* QueryPawn, APawn* TargetPawn);
+
+	UFUNCTION(BlueprintPure, Category = "FunctionLibrary", meta = (CompactNodeTitle = "Get Value At Level"))
+	static float GetScalableFloatValueAtLevel(const FScalableFloat& InScalableFloat, float InLevel = 1.f);
+
+	UFUNCTION(BlueprintPure, Category = "FunctionLibrary")
+	static FGameplayTag ComputeHitReactDirectionTag(AActor* InAttacker, AActor* InVictim, float& OutAngleDifference);
 };

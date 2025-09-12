@@ -3,6 +3,7 @@
 
 #include "AbilitySystem/MyAbilitySystemComponent.h"
 #include "AbilitySystem/Abilities/HeroGameplayAbility.h"
+#include "MyGamePlayTags.h"
 
 #include "DebugHelper.h"
 
@@ -22,6 +23,18 @@ void UMyAbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& InInpu
 
 void UMyAbilitySystemComponent::OnAbilityInputReleased(const FGameplayTag& InInputTag)
 {
+	if (!InInputTag.IsValid() || !InInputTag.MatchesTag(MyGamePlayTags::InputTag_MustBeHeld))
+	{
+		return;
+	}
+
+	for (const FGameplayAbilitySpec& AbilitySpec : GetActivatableAbilities())
+	{
+		if (AbilitySpec.DynamicAbilityTags.HasTagExact(InInputTag) && AbilitySpec.IsActive())
+		{
+			CancelAbilityHandle(AbilitySpec.Handle);
+		}
+	}
 }
 
 void UMyAbilitySystemComponent::GrantHeroWeaponAbilities(const TArray<FHeroAbilitySet>& InDefaultWeaponAbilities, int32 ApplyLevel, TArray<FGameplayAbilitySpecHandle>& OutGrantedAbilitySpecHandles)
