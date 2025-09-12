@@ -3,6 +3,7 @@
 
 #include "Items/Weapons/MyWeaponBase.h"
 #include "Components/BoxComponent.h"
+#include "MyFunctionLibrary.h"
 
 #include "DebugHelper.h"
 
@@ -30,13 +31,11 @@ void AMyWeaponBase::OnCollisionBoxBeginOverlap(UPrimitiveComponent* OverlappedCo
 
 	if (APawn* HitPawn = Cast<APawn>(OtherActor))
 	{
-		if (WeaponOwningPawn != HitPawn)
+		if (UMyFunctionLibrary::IsTargetPawnHostile(WeaponOwningPawn, HitPawn))
 		{
 			OnWeaponHitTarget.ExecuteIfBound(OtherActor);
 		}
-
-		//TODO: Implement hit check for enemy characters
-	}
+	}	
 }
 
 void AMyWeaponBase::OnCollisionBoxEndOverlap(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
@@ -47,12 +46,10 @@ void AMyWeaponBase::OnCollisionBoxEndOverlap(UPrimitiveComponent* OverlappedComp
 
 	if (APawn* HitPawn = Cast<APawn>(OtherActor))
 	{
-		if (WeaponOwningPawn != HitPawn)
+		if (UMyFunctionLibrary::IsTargetPawnHostile(WeaponOwningPawn, HitPawn))
 		{
 			OnWeaponPulledFromTarget.ExecuteIfBound(OtherActor);
 		}
-
-		//TODO: Implement hit check for enemy characters
 	}
 }
 

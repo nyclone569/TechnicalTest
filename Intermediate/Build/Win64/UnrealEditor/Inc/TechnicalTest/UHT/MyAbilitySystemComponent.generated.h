@@ -17,10 +17,12 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 struct FGameplayAbilitySpecHandle;
+struct FGameplayTag;
 struct FHeroAbilitySet;
 
 // ********** Begin Class UMyAbilitySystemComponent ************************************************
 #define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAbilitySystemComponent_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execTryActivateAbilityByTag); \
 	DECLARE_FUNCTION(execRemovedGrantHeroWeaponAbilities); \
 	DECLARE_FUNCTION(execGrantHeroWeaponAbilities);
 

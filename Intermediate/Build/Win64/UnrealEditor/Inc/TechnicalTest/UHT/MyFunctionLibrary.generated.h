@@ -17,6 +17,7 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 class AActor;
+class APawn;
 class UPawnCombatComponent;
 enum class EMyConfirmType : uint8;
 enum class EMyValidType : uint8;
@@ -24,6 +25,7 @@ struct FGameplayTag;
 
 // ********** Begin Class UMyFunctionLibrary *******************************************************
 #define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_MyFunctionLibrary_h_20_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execIsTargetPawnHostile); \
 	DECLARE_FUNCTION(execBP_GetPawnCombatComponentFromActor); \
 	DECLARE_FUNCTION(execBP_DoesActorHaveTag); \
 	DECLARE_FUNCTION(execRemoveGameplayFromActorIfFound); \

@@ -87,6 +87,9 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AI\BTService_OrientToTargetActor.cpp">
       <Filter>Source\TechnicalTest\Private\AI</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AI\BTTask_RotateToFaceTarget.cpp">
+      <Filter>Source\TechnicalTest\Private\AI</Filter>
+    </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\AnimInstances">
       <UniqueIdentifier>{786B81A0-EE93-3A66-AFF6-F8AD0CF7C3B7}</UniqueIdentifier>
     </Filter>
@@ -265,6 +268,9 @@
       <UniqueIdentifier>{9CAC8C59-F3AB-33DA-BC66-6CD69A5574F2}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AI\BTService_OrientToTargetActor.h">
+      <Filter>Source\TechnicalTest\Public\AI</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AI\BTTask_RotateToFaceTarget.h">
       <Filter>Source\TechnicalTest\Public\AI</Filter>
     </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\AnimInstances">

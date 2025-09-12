@@ -7,6 +7,7 @@
 #include "UObject/GeneratedCppIncludes.h"
 #include "AbilitySystem/MyAbilitySystemComponent.h"
 #include "GameplayAbilitySpecHandle.h"
+#include "GameplayTagContainer.h"
 #include "MyTypes/MyStuctTypes.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
@@ -16,6 +17,7 @@ void EmptyLinkFunctionForGeneratedCodeMyAbilitySystemComponent() {}
 // ********** Begin Cross Module References ********************************************************
 GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UAbilitySystemComponent();
 GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayAbilitySpecHandle();
+GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyAbilitySystemComponent();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyAbilitySystemComponent_NoRegister();
 TECHNICALTEST_API UScriptStruct* Z_Construct_UScriptStruct_FHeroAbilitySet();
@@ -131,6 +133,58 @@ DEFINE_FUNCTION(UMyAbilitySystemComponent::execRemovedGrantHeroWeaponAbilities)
 }
 // ********** End Class UMyAbilitySystemComponent Function RemovedGrantHeroWeaponAbilities *********
 
+// ********** Begin Class UMyAbilitySystemComponent Function TryActivateAbilityByTag ***************
+struct Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics
+{
+	struct MyAbilitySystemComponent_eventTryActivateAbilityByTag_Parms
+	{
+		FGameplayTag AbilityTagToActivate;
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ability" },
+		{ "ModuleRelativePath", "Public/AbilitySystem/MyAbilitySystemComponent.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FStructPropertyParams NewProp_AbilityTagToActivate;
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::NewProp_AbilityTagToActivate = { "AbilityTagToActivate", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MyAbilitySystemComponent_eventTryActivateAbilityByTag_Parms, AbilityTagToActivate), Z_Construct_UScriptStruct_FGameplayTag, METADATA_PARAMS(0, nullptr) }; // 133831994
+void Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((MyAbilitySystemComponent_eventTryActivateAbilityByTag_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(MyAbilitySystemComponent_eventTryActivateAbilityByTag_Parms), &Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::NewProp_AbilityTagToActivate,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMyAbilitySystemComponent, nullptr, "TryActivateAbilityByTag", Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::MyAbilitySystemComponent_eventTryActivateAbilityByTag_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04020401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::MyAbilitySystemComponent_eventTryActivateAbilityByTag_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UMyAbilitySystemComponent::execTryActivateAbilityByTag)
+{
+	P_GET_STRUCT(FGameplayTag,Z_Param_AbilityTagToActivate);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=P_THIS->TryActivateAbilityByTag(Z_Param_AbilityTagToActivate);
+	P_NATIVE_END;
+}
+// ********** End Class UMyAbilitySystemComponent Function TryActivateAbilityByTag *****************
+
 // ********** Begin Class UMyAbilitySystemComponent ************************************************
 void UMyAbilitySystemComponent::StaticRegisterNativesUMyAbilitySystemComponent()
 {
@@ -138,6 +192,7 @@ void UMyAbilitySystemComponent::StaticRegisterNativesUMyAbilitySystemComponent()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "GrantHeroWeaponAbilities", &UMyAbilitySystemComponent::execGrantHeroWeaponAbilities },
 		{ "RemovedGrantHeroWeaponAbilities", &UMyAbilitySystemComponent::execRemovedGrantHeroWeaponAbilities },
+		{ "TryActivateAbilityByTag", &UMyAbilitySystemComponent::execTryActivateAbilityByTag },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -186,6 +241,7 @@ struct Z_Construct_UClass_UMyAbilitySystemComponent_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UMyAbilitySystemComponent_GrantHeroWeaponAbilities, "GrantHeroWeaponAbilities" }, // 1184558415
 		{ &Z_Construct_UFunction_UMyAbilitySystemComponent_RemovedGrantHeroWeaponAbilities, "RemovedGrantHeroWeaponAbilities" }, // 1961926661
+		{ &Z_Construct_UFunction_UMyAbilitySystemComponent_TryActivateAbilityByTag, "TryActivateAbilityByTag" }, // 4291978701
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -230,10 +286,10 @@ UMyAbilitySystemComponent::~UMyAbilitySystemComponent() {}
 struct Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAbilitySystemComponent_h__Script_TechnicalTest_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMyAbilitySystemComponent, UMyAbilitySystemComponent::StaticClass, TEXT("UMyAbilitySystemComponent"), &Z_Registration_Info_UClass_UMyAbilitySystemComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMyAbilitySystemComponent), 1842896747U) },
+		{ Z_Construct_UClass_UMyAbilitySystemComponent, UMyAbilitySystemComponent::StaticClass, TEXT("UMyAbilitySystemComponent"), &Z_Registration_Info_UClass_UMyAbilitySystemComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMyAbilitySystemComponent), 1016554084U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAbilitySystemComponent_h__Script_TechnicalTest_3515928290(TEXT("/Script/TechnicalTest"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAbilitySystemComponent_h__Script_TechnicalTest_1752114133(TEXT("/Script/TechnicalTest"),
 	Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAbilitySystemComponent_h__Script_TechnicalTest_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAbilitySystemComponent_h__Script_TechnicalTest_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

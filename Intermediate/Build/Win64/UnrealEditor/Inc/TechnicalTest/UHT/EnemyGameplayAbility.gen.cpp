@@ -6,12 +6,18 @@
 
 #include "UObject/GeneratedCppIncludes.h"
 #include "AbilitySystem/Abilities/EnemyGameplayAbility.h"
+#include "GameplayEffectTypes.h"
+#include "ScalableFloat.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 void EmptyLinkFunctionForGeneratedCodeEnemyGameplayAbility() {}
 
 // ********** Begin Cross Module References ********************************************************
+COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+GAMEPLAYABILITIES_API UClass* Z_Construct_UClass_UGameplayEffect_NoRegister();
+GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayEffectSpecHandle();
+GAMEPLAYABILITIES_API UScriptStruct* Z_Construct_UScriptStruct_FScalableFloat();
 TECHNICALTEST_API UClass* Z_Construct_UClass_AEnemyCharacter_NoRegister();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UEnemyCombatComponent_NoRegister();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UEnemyGameplayAbility();
@@ -107,6 +113,61 @@ DEFINE_FUNCTION(UEnemyGameplayAbility::execGetEnemyCombatComponentFromActorInfo)
 }
 // ********** End Class UEnemyGameplayAbility Function GetEnemyCombatComponentFromActorInfo ********
 
+// ********** Begin Class UEnemyGameplayAbility Function MakeEnemyDamageEffectHandle ***************
+struct Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics
+{
+	struct EnemyGameplayAbility_eventMakeEnemyDamageEffectHandle_Parms
+	{
+		TSubclassOf<UGameplayEffect> EffectClass;
+		FScalableFloat InDamageScalableFloat;
+		FGameplayEffectSpecHandle ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "Ability" },
+		{ "ModuleRelativePath", "Public/AbilitySystem/Abilities/EnemyGameplayAbility.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_InDamageScalableFloat_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FClassPropertyParams NewProp_EffectClass;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_InDamageScalableFloat;
+	static const UECodeGen_Private::FStructPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FClassPropertyParams Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::NewProp_EffectClass = { "EffectClass", nullptr, (EPropertyFlags)0x0014000000000080, UECodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(EnemyGameplayAbility_eventMakeEnemyDamageEffectHandle_Parms, EffectClass), Z_Construct_UClass_UClass, Z_Construct_UClass_UGameplayEffect_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::NewProp_InDamageScalableFloat = { "InDamageScalableFloat", nullptr, (EPropertyFlags)0x0010000008000182, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(EnemyGameplayAbility_eventMakeEnemyDamageEffectHandle_Parms, InDamageScalableFloat), Z_Construct_UScriptStruct_FScalableFloat, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_InDamageScalableFloat_MetaData), NewProp_InDamageScalableFloat_MetaData) }; // 3660911330
+const UECodeGen_Private::FStructPropertyParams Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(EnemyGameplayAbility_eventMakeEnemyDamageEffectHandle_Parms, ReturnValue), Z_Construct_UScriptStruct_FGameplayEffectSpecHandle, METADATA_PARAMS(0, nullptr) }; // 4275563785
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::NewProp_EffectClass,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::NewProp_InDamageScalableFloat,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UEnemyGameplayAbility, nullptr, "MakeEnemyDamageEffectHandle", Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::PropPointers), sizeof(Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::EnemyGameplayAbility_eventMakeEnemyDamageEffectHandle_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14420401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::Function_MetaDataParams), Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::EnemyGameplayAbility_eventMakeEnemyDamageEffectHandle_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UEnemyGameplayAbility::execMakeEnemyDamageEffectHandle)
+{
+	P_GET_OBJECT(UClass,Z_Param_EffectClass);
+	P_GET_STRUCT_REF(FScalableFloat,Z_Param_Out_InDamageScalableFloat);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(FGameplayEffectSpecHandle*)Z_Param__Result=P_THIS->MakeEnemyDamageEffectHandle(Z_Param_EffectClass,Z_Param_Out_InDamageScalableFloat);
+	P_NATIVE_END;
+}
+// ********** End Class UEnemyGameplayAbility Function MakeEnemyDamageEffectHandle *****************
+
 // ********** Begin Class UEnemyGameplayAbility ****************************************************
 void UEnemyGameplayAbility::StaticRegisterNativesUEnemyGameplayAbility()
 {
@@ -114,6 +175,7 @@ void UEnemyGameplayAbility::StaticRegisterNativesUEnemyGameplayAbility()
 	static const FNameNativePtrPair Funcs[] = {
 		{ "GetEnemyCharacterFromActorInfo", &UEnemyGameplayAbility::execGetEnemyCharacterFromActorInfo },
 		{ "GetEnemyCombatComponentFromActorInfo", &UEnemyGameplayAbility::execGetEnemyCombatComponentFromActorInfo },
+		{ "MakeEnemyDamageEffectHandle", &UEnemyGameplayAbility::execMakeEnemyDamageEffectHandle },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 }
@@ -161,6 +223,7 @@ struct Z_Construct_UClass_UEnemyGameplayAbility_Statics
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
 		{ &Z_Construct_UFunction_UEnemyGameplayAbility_GetEnemyCharacterFromActorInfo, "GetEnemyCharacterFromActorInfo" }, // 1678947025
 		{ &Z_Construct_UFunction_UEnemyGameplayAbility_GetEnemyCombatComponentFromActorInfo, "GetEnemyCombatComponentFromActorInfo" }, // 2516950554
+		{ &Z_Construct_UFunction_UEnemyGameplayAbility_MakeEnemyDamageEffectHandle, "MakeEnemyDamageEffectHandle" }, // 1916011063
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
@@ -205,10 +268,10 @@ UEnemyGameplayAbility::~UEnemyGameplayAbility() {}
 struct Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_EnemyGameplayAbility_h__Script_TechnicalTest_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UEnemyGameplayAbility, UEnemyGameplayAbility::StaticClass, TEXT("UEnemyGameplayAbility"), &Z_Registration_Info_UClass_UEnemyGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnemyGameplayAbility), 1427433433U) },
+		{ Z_Construct_UClass_UEnemyGameplayAbility, UEnemyGameplayAbility::StaticClass, TEXT("UEnemyGameplayAbility"), &Z_Registration_Info_UClass_UEnemyGameplayAbility, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnemyGameplayAbility), 490754900U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_EnemyGameplayAbility_h__Script_TechnicalTest_2819375573(TEXT("/Script/TechnicalTest"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_EnemyGameplayAbility_h__Script_TechnicalTest_3015289727(TEXT("/Script/TechnicalTest"),
 	Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_EnemyGameplayAbility_h__Script_TechnicalTest_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_EnemyGameplayAbility_h__Script_TechnicalTest_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

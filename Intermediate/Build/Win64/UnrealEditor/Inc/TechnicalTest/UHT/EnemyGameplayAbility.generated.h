@@ -18,9 +18,13 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 class AEnemyCharacter;
 class UEnemyCombatComponent;
+class UGameplayEffect;
+struct FGameplayEffectSpecHandle;
+struct FScalableFloat;
 
 // ********** Begin Class UEnemyGameplayAbility ****************************************************
 #define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_Abilities_EnemyGameplayAbility_h_17_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execMakeEnemyDamageEffectHandle); \
 	DECLARE_FUNCTION(execGetEnemyCombatComponentFromActorInfo); \
 	DECLARE_FUNCTION(execGetEnemyCharacterFromActorInfo);
 

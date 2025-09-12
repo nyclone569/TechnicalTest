@@ -14,6 +14,7 @@ void EmptyLinkFunctionForGeneratedCodeMyFunctionLibrary() {}
 
 // ********** Begin Cross Module References ********************************************************
 ENGINE_API UClass* Z_Construct_UClass_AActor_NoRegister();
+ENGINE_API UClass* Z_Construct_UClass_APawn_NoRegister();
 ENGINE_API UClass* Z_Construct_UClass_UBlueprintFunctionLibrary();
 GAMEPLAYTAGS_API UScriptStruct* Z_Construct_UScriptStruct_FGameplayTag();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyFunctionLibrary();
@@ -190,6 +191,63 @@ DEFINE_FUNCTION(UMyFunctionLibrary::execBP_GetPawnCombatComponentFromActor)
 }
 // ********** End Class UMyFunctionLibrary Function BP_GetPawnCombatComponentFromActor *************
 
+// ********** Begin Class UMyFunctionLibrary Function IsTargetPawnHostile **************************
+struct Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics
+{
+	struct MyFunctionLibrary_eventIsTargetPawnHostile_Parms
+	{
+		APawn* QueryPawn;
+		APawn* TargetPawn;
+		bool ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "Category", "FunctionLibrary" },
+		{ "ModuleRelativePath", "Public/MyFunctionLibrary.h" },
+	};
+#endif // WITH_METADATA
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_QueryPawn;
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_TargetPawn;
+	static void NewProp_ReturnValue_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::NewProp_QueryPawn = { "QueryPawn", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MyFunctionLibrary_eventIsTargetPawnHostile_Parms, QueryPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::NewProp_TargetPawn = { "TargetPawn", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(MyFunctionLibrary_eventIsTargetPawnHostile_Parms, TargetPawn), Z_Construct_UClass_APawn_NoRegister, METADATA_PARAMS(0, nullptr) };
+void Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::NewProp_ReturnValue_SetBit(void* Obj)
+{
+	((MyFunctionLibrary_eventIsTargetPawnHostile_Parms*)Obj)->ReturnValue = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(MyFunctionLibrary_eventIsTargetPawnHostile_Parms), &Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::NewProp_ReturnValue_SetBit, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::NewProp_QueryPawn,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::NewProp_TargetPawn,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::PropPointers) < 2048);
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_UMyFunctionLibrary, nullptr, "IsTargetPawnHostile", Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::PropPointers), sizeof(Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::MyFunctionLibrary_eventIsTargetPawnHostile_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x14022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::Function_MetaDataParams), Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::MyFunctionLibrary_eventIsTargetPawnHostile_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(UMyFunctionLibrary::execIsTargetPawnHostile)
+{
+	P_GET_OBJECT(APawn,Z_Param_QueryPawn);
+	P_GET_OBJECT(APawn,Z_Param_TargetPawn);
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(bool*)Z_Param__Result=UMyFunctionLibrary::IsTargetPawnHostile(Z_Param_QueryPawn,Z_Param_TargetPawn);
+	P_NATIVE_END;
+}
+// ********** End Class UMyFunctionLibrary Function IsTargetPawnHostile ****************************
+
 // ********** Begin Class UMyFunctionLibrary Function RemoveGameplayFromActorIfFound ***************
 struct Z_Construct_UFunction_UMyFunctionLibrary_RemoveGameplayFromActorIfFound_Statics
 {
@@ -246,6 +304,7 @@ void UMyFunctionLibrary::StaticRegisterNativesUMyFunctionLibrary()
 		{ "AddGameplayTagToActorIfNone", &UMyFunctionLibrary::execAddGameplayTagToActorIfNone },
 		{ "BP_DoesActorHaveTag", &UMyFunctionLibrary::execBP_DoesActorHaveTag },
 		{ "BP_GetPawnCombatComponentFromActor", &UMyFunctionLibrary::execBP_GetPawnCombatComponentFromActor },
+		{ "IsTargetPawnHostile", &UMyFunctionLibrary::execIsTargetPawnHostile },
 		{ "RemoveGameplayFromActorIfFound", &UMyFunctionLibrary::execRemoveGameplayFromActorIfFound },
 	};
 	FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
@@ -295,6 +354,7 @@ struct Z_Construct_UClass_UMyFunctionLibrary_Statics
 		{ &Z_Construct_UFunction_UMyFunctionLibrary_AddGameplayTagToActorIfNone, "AddGameplayTagToActorIfNone" }, // 3938812514
 		{ &Z_Construct_UFunction_UMyFunctionLibrary_BP_DoesActorHaveTag, "BP_DoesActorHaveTag" }, // 2139985186
 		{ &Z_Construct_UFunction_UMyFunctionLibrary_BP_GetPawnCombatComponentFromActor, "BP_GetPawnCombatComponentFromActor" }, // 1691332017
+		{ &Z_Construct_UFunction_UMyFunctionLibrary_IsTargetPawnHostile, "IsTargetPawnHostile" }, // 652325874
 		{ &Z_Construct_UFunction_UMyFunctionLibrary_RemoveGameplayFromActorIfFound, "RemoveGameplayFromActorIfFound" }, // 3271484963
 	};
 	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
@@ -340,10 +400,10 @@ UMyFunctionLibrary::~UMyFunctionLibrary() {}
 struct Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_MyFunctionLibrary_h__Script_TechnicalTest_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMyFunctionLibrary, UMyFunctionLibrary::StaticClass, TEXT("UMyFunctionLibrary"), &Z_Registration_Info_UClass_UMyFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMyFunctionLibrary), 2077321814U) },
+		{ Z_Construct_UClass_UMyFunctionLibrary, UMyFunctionLibrary::StaticClass, TEXT("UMyFunctionLibrary"), &Z_Registration_Info_UClass_UMyFunctionLibrary, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMyFunctionLibrary), 1450979106U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_MyFunctionLibrary_h__Script_TechnicalTest_595308051(TEXT("/Script/TechnicalTest"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_MyFunctionLibrary_h__Script_TechnicalTest_1713652319(TEXT("/Script/TechnicalTest"),
 	Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_MyFunctionLibrary_h__Script_TechnicalTest_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_MyFunctionLibrary_h__Script_TechnicalTest_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

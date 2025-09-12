@@ -4,6 +4,7 @@
 #include "Characters/BaseCharacter.h"
 #include "AbilitySystem/MyAbilitySystemComponent.h"
 #include "AbilitySystem/MyAttributeSet.h"
+#include "MotionWarpingComponent.h"
 
 // Sets default values
 ABaseCharacter::ABaseCharacter()
@@ -17,6 +18,8 @@ ABaseCharacter::ABaseCharacter()
 	MyAbilitySystemComponent = CreateDefaultSubobject<UMyAbilitySystemComponent>(TEXT("MyAbilitySystemComponent"));
 
 	MyAttributeSet = CreateDefaultSubobject<UMyAttributeSet>(TEXT("MyAttributeSet"));
+
+	MotionWarpingComponent = CreateDefaultSubobject<UMotionWarpingComponent>(TEXT("MotionWarpingComponent"));
 }
 
 UAbilitySystemComponent* ABaseCharacter::GetAbilitySystemComponent() const
