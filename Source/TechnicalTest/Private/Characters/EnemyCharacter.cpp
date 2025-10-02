@@ -32,6 +32,9 @@ AEnemyCharacter::AEnemyCharacter()
 
 	EnemyHealthWidgetComponent = CreateDefaultSubobject< UWidgetComponent>("EnemyHealthWidgetComponent");
 	EnemyHealthWidgetComponent->SetupAttachment(GetMesh());
+
+	EnemyPoiseWidgetComponent = CreateDefaultSubobject< UWidgetComponent>("EnemyPoiseWidgetComponent");
+	EnemyPoiseWidgetComponent->SetupAttachment(GetMesh());
 }
 
 UPawnCombatComponent* AEnemyCharacter::GetPawnCombatComponent() const
@@ -56,6 +59,11 @@ void AEnemyCharacter::BeginPlay()
 	if (UWidgetBase* HealthWidget = Cast<UWidgetBase>(EnemyHealthWidgetComponent->GetUserWidgetObject()))
 	{
 		HealthWidget->InitEnemyCreatedWidget(this);
+	}
+
+	if (UWidgetBase* PoiseWidget = Cast<UWidgetBase>(EnemyPoiseWidgetComponent->GetUserWidgetObject()))
+	{
+		PoiseWidget->InitEnemyCreatedWidget(this);
 	}
 }
 

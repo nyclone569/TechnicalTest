@@ -284,7 +284,13 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\HeroGameplayAbility.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\MyGameplayAbility.cpp">
+      <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.cpp">
       <AdditionalIncludeDirectories>$(ClCompile_AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.cpp">
@@ -387,7 +393,9 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\MyAttributeSet.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\EnemyGameplayAbility.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\HeroGameplayAbility.h"/>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\MyGameplayAbility.h"/>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\GEExecCalc\GEExecCalc_DamageTaken.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AI\BTService_OrientToTargetActor.h"/>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AI\BTTask_RotateToFaceTarget.h"/>

@@ -23,10 +23,17 @@ TECHNICALTEST_API void FOnPercentChangedDelegate_DelegateWrapper(const FMulticas
 
 // ********** End Delegate FOnPercentChangedDelegate ***********************************************
 
+// ********** Begin Delegate FOnCounterStackChanged ************************************************
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_10_DELEGATE \
+TECHNICALTEST_API void FOnCounterStackChanged_DelegateWrapper(const FMulticastScriptDelegate& OnCounterStackChanged, int32 NewValue);
+
+
+// ********** End Delegate FOnCounterStackChanged **************************************************
+
 // ********** Begin Class UPawnUIComponent *********************************************************
 TECHNICALTEST_API UClass* Z_Construct_UClass_UPawnUIComponent_NoRegister();
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_16_INCLASS_NO_PURE_DECLS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_17_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesUPawnUIComponent(); \
 	friend struct Z_Construct_UClass_UPawnUIComponent_Statics; \
@@ -37,7 +44,7 @@ public: \
 	DECLARE_SERIALIZER(UPawnUIComponent)
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_16_ENHANCED_CONSTRUCTORS \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_17_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API UPawnUIComponent(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	/** Deleted move- and copy-constructors, should never be used */ \
@@ -49,12 +56,12 @@ public: \
 	NO_API virtual ~UPawnUIComponent();
 
 
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_13_PROLOG
-#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_16_GENERATED_BODY \
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_14_PROLOG
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_17_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_16_INCLASS_NO_PURE_DECLS \
-	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_16_ENHANCED_CONSTRUCTORS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_17_INCLASS_NO_PURE_DECLS \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_PawnUIComponent_h_17_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

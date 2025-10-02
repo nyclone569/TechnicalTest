@@ -26,12 +26,13 @@ struct FScalableFloat;
 
 // ********** Begin Class UMyFunctionLibrary *******************************************************
 #define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_MyFunctionLibrary_h_21_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execIsValidBlock); \
 	DECLARE_FUNCTION(execComputeHitReactDirectionTag); \
 	DECLARE_FUNCTION(execGetScalableFloatValueAtLevel); \
 	DECLARE_FUNCTION(execIsTargetPawnHostile); \
 	DECLARE_FUNCTION(execBP_GetPawnCombatComponentFromActor); \
 	DECLARE_FUNCTION(execBP_DoesActorHaveTag); \
-	DECLARE_FUNCTION(execRemoveGameplayFromActorIfFound); \
+	DECLARE_FUNCTION(execRemoveGameplayTagFromActorIfFound); \
 	DECLARE_FUNCTION(execAddGameplayTagToActorIfNone);
 
 

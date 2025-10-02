@@ -13,5 +13,7 @@ UCLASS()
 class TECHNICALTEST_API UEnemyUIComponent : public UPawnUIComponent
 {
 	GENERATED_BODY()
-	
+public:
+	UPROPERTY(BlueprintAssignable)
+	FOnPercentChangedDelegate OnCurrentPoiseChanged;
 };

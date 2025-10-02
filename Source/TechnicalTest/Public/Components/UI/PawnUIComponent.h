@@ -7,6 +7,7 @@
 #include "PawnUIComponent.generated.h"
 
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnPercentChangedDelegate, float, NewPercent);
+DECLARE_DYNAMIC_MULTICAST_DELEGATE_OneParam(FOnCounterStackChanged, int32, NewValue);
 /**
  * 
  */
@@ -18,4 +19,7 @@ class TECHNICALTEST_API UPawnUIComponent : public UPawnExtentionComponentBase
 public:
 	UPROPERTY(BlueprintAssignable)
 	FOnPercentChangedDelegate OnCurrentHealthChanged;
+
+	UPROPERTY(BlueprintAssignable)
+	FOnCounterStackChanged OnCurrentCounterStackChanged;
 };

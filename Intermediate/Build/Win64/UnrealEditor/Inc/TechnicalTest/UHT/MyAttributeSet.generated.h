@@ -17,6 +17,10 @@
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 
 // ********** Begin Class UMyAttributeSet **********************************************************
+#define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
+	DECLARE_FUNCTION(execResetCounterStackTimerExpired);
+
+
 TECHNICALTEST_API UClass* Z_Construct_UClass_UMyAttributeSet_NoRegister();
 
 #define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_23_INCLASS_NO_PURE_DECLS \
@@ -44,6 +48,7 @@ public: \
 #define FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_23_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
+	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_23_RPC_WRAPPERS_NO_PURE_DECLS \
 	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_23_INCLASS_NO_PURE_DECLS \
 	FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_AbilitySystem_MyAttributeSet_h_23_ENHANCED_CONSTRUCTORS \
 private: \

@@ -43,6 +43,14 @@ public:
 	FGameplayAttributeData MaxRage;
 	ATTRIBUTE_ACCESSORS(UMyAttributeSet, MaxRage)
 
+	UPROPERTY(BlueprintReadOnly, Category = "Poise")
+	FGameplayAttributeData CurrentPoise;
+	ATTRIBUTE_ACCESSORS(UMyAttributeSet, CurrentPoise)
+
+	UPROPERTY(BlueprintReadOnly, Category = "Poise")
+	FGameplayAttributeData MaxPoise;
+	ATTRIBUTE_ACCESSORS(UMyAttributeSet, MaxPoise)
+
 	UPROPERTY(BlueprintReadOnly, Category = "Damage")
 	FGameplayAttributeData AttackPower;
 	ATTRIBUTE_ACCESSORS(UMyAttributeSet, AttackPower)
@@ -55,6 +63,14 @@ public:
 	FGameplayAttributeData DamageTaken;
 	ATTRIBUTE_ACCESSORS(UMyAttributeSet, DamageTaken)
 
+	UPROPERTY(BlueprintReadOnly, Category = "Damage")
+	FGameplayAttributeData CounterStack;
+	ATTRIBUTE_ACCESSORS(UMyAttributeSet, CounterStack)
+
 private:
 	TWeakInterfacePtr<IPawnUIInterface> CachedPawnUIInterface;
+	FTimerHandle CounterResetTimerHandle;
+
+	UFUNCTION()
+	void ResetCounterStackTimerExpired();
 };

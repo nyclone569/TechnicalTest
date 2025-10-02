@@ -72,8 +72,17 @@
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\HeroGameplayAbility.cpp">
       <Filter>Source\TechnicalTest\Private\AbilitySystem\Abilities</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.cpp">
+      <Filter>Source\TechnicalTest\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\Abilities\MyGameplayAbility.cpp">
       <Filter>Source\TechnicalTest\Private\AbilitySystem\Abilities</Filter>
+    </ClCompile>
+    <Filter Include="Source\TechnicalTest\Private\AbilitySystem\AbilityTasks">
+      <UniqueIdentifier>{BCB0E062-0E01-3D7C-A6A9-708FDD1AA41B}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\TechnicalTest\Private\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.cpp">
+      <Filter>Source\TechnicalTest\Private\AbilitySystem\AbilityTasks</Filter>
     </ClCompile>
     <Filter Include="Source\TechnicalTest\Private\AbilitySystem\GEExecCalc">
       <UniqueIdentifier>{5FAA9A79-36DB-3A33-997C-B072E1ED2B3D}</UniqueIdentifier>
@@ -255,8 +264,17 @@
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\HeroGameplayAbility.h">
       <Filter>Source\TechnicalTest\Public\AbilitySystem\Abilities</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\HeroGameplayAbility_TargetLock.h">
+      <Filter>Source\TechnicalTest\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\Abilities\MyGameplayAbility.h">
       <Filter>Source\TechnicalTest\Public\AbilitySystem\Abilities</Filter>
+    </ClInclude>
+    <Filter Include="Source\TechnicalTest\Public\AbilitySystem\AbilityTasks">
+      <UniqueIdentifier>{34CD8C26-1EF3-3BE5-9CE9-8CAC9C9129E9}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\TechnicalTest\Public\AbilitySystem\AbilityTasks\AbilityTask_ExecuteTaskOnTick.h">
+      <Filter>Source\TechnicalTest\Public\AbilitySystem\AbilityTasks</Filter>
     </ClInclude>
     <Filter Include="Source\TechnicalTest\Public\AbilitySystem\GEExecCalc">
       <UniqueIdentifier>{17A926F6-560E-3E3C-94F4-D714AF55B855}</UniqueIdentifier>

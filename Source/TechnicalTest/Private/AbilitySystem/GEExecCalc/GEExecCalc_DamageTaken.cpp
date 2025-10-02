@@ -12,12 +12,14 @@ struct FMyDamageCapture
 	DECLARE_ATTRIBUTE_CAPTUREDEF(AttackPower)
 	DECLARE_ATTRIBUTE_CAPTUREDEF(DefensePower)
 	DECLARE_ATTRIBUTE_CAPTUREDEF(DamageTaken)
+	DECLARE_ATTRIBUTE_CAPTUREDEF(CounterStack)
 
 	FMyDamageCapture()
 	{
 		DEFINE_ATTRIBUTE_CAPTUREDEF(UMyAttributeSet, AttackPower, Source, false)
 		DEFINE_ATTRIBUTE_CAPTUREDEF(UMyAttributeSet, DefensePower, Target, false)
 		DEFINE_ATTRIBUTE_CAPTUREDEF(UMyAttributeSet, DamageTaken, Target, false)
+		DEFINE_ATTRIBUTE_CAPTUREDEF(UMyAttributeSet, CounterStack, Source, false)
 	}
 };
 
@@ -45,6 +47,7 @@ UGEExecCalc_DamageTaken::UGEExecCalc_DamageTaken()
 	RelevantAttributesToCapture.Add(GetMyDamageCapture().AttackPowerDef);
 	RelevantAttributesToCapture.Add(GetMyDamageCapture().DefensePowerDef);
 	RelevantAttributesToCapture.Add(GetMyDamageCapture().DamageTakenDef);
+	RelevantAttributesToCapture.Add(GetMyDamageCapture().CounterStackDef);
 }
 
 void UGEExecCalc_DamageTaken::Execute_Implementation(const FGameplayEffectCustomExecutionParameters& ExecutionParams, FGameplayEffectCustomExecutionOutput& OutExecutionOutput) const
@@ -65,6 +68,11 @@ void UGEExecCalc_DamageTaken::Execute_Implementation(const FGameplayEffectCustom
 	//Debug::Print(TEXT("SourceAttackPower"), SourceAttackPower);
 
 	float BaseDamage = 0.f;
+
+	float SourceCounterStack = 0.f;
+	ExecutionParams.AttemptCalculateCapturedAttributeMagnitude(GetMyDamageCapture().CounterStackDef, EvaluateParameters, SourceCounterStack);
+
+
 	int32 UsedLightAttackComboCount = 0;
 	int32 UsedHeavyAttackComboCount = 0;
 
@@ -75,6 +83,7 @@ void UGEExecCalc_DamageTaken::Execute_Implementation(const FGameplayEffectCustom
 			BaseDamage = TagMagnitude.Value;
 			//Debug::Print(TEXT("BaseDamage"), BaseDamage);
 		}
+
 
 		if (TagMagnitude.Key.MatchesTagExact(MyGamePlayTags::Player_SetByCaller_AttackType_Light))
 		{
@@ -112,8 +121,11 @@ void UGEExecCalc_DamageTaken::Execute_Implementation(const FGameplayEffectCustom
 		//Debug::Print(TEXT("ScaleBaseDamageHeavy"), BaseDamage);
 	}
 
-	const float FinalDamageDone = BaseDamage * SourceAttackPower / TargetDefensePower;
-	//Debug::Print(TEXT("FinalDamageDone"), FinalDamageDone);
+	const float CounterStackMultiplier = 1.0f + (SourceCounterStack / 10.f);
+	/*Debug::Print(TEXT("SourceCounterStack: %f, CounterStackMultiplier: %f"), SourceCounterStack, CounterStackMultiplier);*/
+
+	const float FinalDamageDone = (BaseDamage * SourceAttackPower / TargetDefensePower)*CounterStackMultiplier;
+	/*Debug::Print(TEXT("FinalDamageDone"), FinalDamageDone);*/
 
 	if (FinalDamageDone > 0.f)
 	{

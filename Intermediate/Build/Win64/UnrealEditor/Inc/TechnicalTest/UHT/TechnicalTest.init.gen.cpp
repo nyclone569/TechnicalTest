@@ -7,6 +7,8 @@
 #include "UObject/GeneratedCppIncludes.h"
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTechnicalTest_init() {}
+	TECHNICALTEST_API UFunction* Z_Construct_UDelegateFunction_TechnicalTest_OnAbilityTaskTickDelegate__DelegateSignature();
+	TECHNICALTEST_API UFunction* Z_Construct_UDelegateFunction_TechnicalTest_OnCounterStackChanged__DelegateSignature();
 	TECHNICALTEST_API UFunction* Z_Construct_UDelegateFunction_TechnicalTest_OnEquippedWeaponChangedDelegate__DelegateSignature();
 	TECHNICALTEST_API UFunction* Z_Construct_UDelegateFunction_TechnicalTest_OnPercentChangedDelegate__DelegateSignature();
 	static FPackageRegistrationInfo Z_Registration_Info_UPackage__Script_TechnicalTest;
@@ -15,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeTechnicalTest_init() {}
 		if (!Z_Registration_Info_UPackage__Script_TechnicalTest.OuterSingleton)
 		{
 			static UObject* (*const SingletonFuncArray[])() = {
+				(UObject* (*)())Z_Construct_UDelegateFunction_TechnicalTest_OnAbilityTaskTickDelegate__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_TechnicalTest_OnCounterStackChanged__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_TechnicalTest_OnEquippedWeaponChangedDelegate__DelegateSignature,
 				(UObject* (*)())Z_Construct_UDelegateFunction_TechnicalTest_OnPercentChangedDelegate__DelegateSignature,
 			};
@@ -23,13 +27,13 @@ void EmptyLinkFunctionForGeneratedCodeTechnicalTest_init() {}
 				SingletonFuncArray,
 				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0x1BD233A2,
-				0x6AF2478A,
+				0x6D927707,
+				0xF31572BE,
 				METADATA_PARAMS(0, nullptr)
 			};
 			UECodeGen_Private::ConstructUPackage(Z_Registration_Info_UPackage__Script_TechnicalTest.OuterSingleton, PackageParams);
 		}
 		return Z_Registration_Info_UPackage__Script_TechnicalTest.OuterSingleton;
 	}
-	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_TechnicalTest(Z_Construct_UPackage__Script_TechnicalTest, TEXT("/Script/TechnicalTest"), Z_Registration_Info_UPackage__Script_TechnicalTest, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x1BD233A2, 0x6AF2478A));
+	static FRegisterCompiledInInfo Z_CompiledInDeferPackage_UPackage__Script_TechnicalTest(Z_Construct_UPackage__Script_TechnicalTest, TEXT("/Script/TechnicalTest"), Z_Registration_Info_UPackage__Script_TechnicalTest, CONSTRUCT_RELOAD_VERSION_INFO(FPackageReloadVersionInfo, 0x6D927707, 0xF31572BE));
 PRAGMA_ENABLE_DEPRECATION_WARNINGS

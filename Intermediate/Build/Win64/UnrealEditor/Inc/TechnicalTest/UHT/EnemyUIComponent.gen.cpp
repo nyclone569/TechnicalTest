@@ -15,6 +15,7 @@ void EmptyLinkFunctionForGeneratedCodeEnemyUIComponent() {}
 TECHNICALTEST_API UClass* Z_Construct_UClass_UEnemyUIComponent();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UEnemyUIComponent_NoRegister();
 TECHNICALTEST_API UClass* Z_Construct_UClass_UPawnUIComponent();
+TECHNICALTEST_API UFunction* Z_Construct_UDelegateFunction_TechnicalTest_OnPercentChangedDelegate__DelegateSignature();
 UPackage* Z_Construct_UPackage__Script_TechnicalTest();
 // ********** End Cross Module References **********************************************************
 
@@ -61,13 +62,23 @@ struct Z_Construct_UClass_UEnemyUIComponent_Statics
 		{ "IncludePath", "Components/UI/EnemyUIComponent.h" },
 		{ "ModuleRelativePath", "Public/Components/UI/EnemyUIComponent.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnCurrentPoiseChanged_MetaData[] = {
+		{ "ModuleRelativePath", "Public/Components/UI/EnemyUIComponent.h" },
+	};
 #endif // WITH_METADATA
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnCurrentPoiseChanged;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<UEnemyUIComponent>::IsAbstract,
 	};
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_UEnemyUIComponent_Statics::NewProp_OnCurrentPoiseChanged = { "OnCurrentPoiseChanged", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UEnemyUIComponent, OnCurrentPoiseChanged), Z_Construct_UDelegateFunction_TechnicalTest_OnPercentChangedDelegate__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnCurrentPoiseChanged_MetaData), NewProp_OnCurrentPoiseChanged_MetaData) }; // 1543719303
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UEnemyUIComponent_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UEnemyUIComponent_Statics::NewProp_OnCurrentPoiseChanged,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyUIComponent_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UEnemyUIComponent_Statics::DependentSingletons[])() = {
 	(UObject* (*)())Z_Construct_UClass_UPawnUIComponent,
 	(UObject* (*)())Z_Construct_UPackage__Script_TechnicalTest,
@@ -79,11 +90,11 @@ const UECodeGen_Private::FClassParams Z_Construct_UClass_UEnemyUIComponent_Stati
 	&StaticCppClassTypeInfo,
 	DependentSingletons,
 	nullptr,
-	nullptr,
+	Z_Construct_UClass_UEnemyUIComponent_Statics::PropPointers,
 	nullptr,
 	UE_ARRAY_COUNT(DependentSingletons),
 	0,
-	0,
+	UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyUIComponent_Statics::PropPointers),
 	0,
 	0x00B000A4u,
 	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_UEnemyUIComponent_Statics::Class_MetaDataParams), Z_Construct_UClass_UEnemyUIComponent_Statics::Class_MetaDataParams)
@@ -105,10 +116,10 @@ UEnemyUIComponent::~UEnemyUIComponent() {}
 struct Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_EnemyUIComponent_h__Script_TechnicalTest_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UEnemyUIComponent, UEnemyUIComponent::StaticClass, TEXT("UEnemyUIComponent"), &Z_Registration_Info_UClass_UEnemyUIComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnemyUIComponent), 2997129908U) },
+		{ Z_Construct_UClass_UEnemyUIComponent, UEnemyUIComponent::StaticClass, TEXT("UEnemyUIComponent"), &Z_Registration_Info_UClass_UEnemyUIComponent, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UEnemyUIComponent), 302557598U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_EnemyUIComponent_h__Script_TechnicalTest_3234604762(TEXT("/Script/TechnicalTest"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_EnemyUIComponent_h__Script_TechnicalTest_3372150433(TEXT("/Script/TechnicalTest"),
 	Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_EnemyUIComponent_h__Script_TechnicalTest_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Projects_Unreal_TechnicalTest_Source_TechnicalTest_Public_Components_UI_EnemyUIComponent_h__Script_TechnicalTest_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

@@ -8,6 +8,8 @@
 #include "Kismet/KismetMathLibrary.h"
 #include "MyGamePlayTags.h"
 
+#include "DebugHelper.h"
+
 UMyAbilitySystemComponent* UMyFunctionLibrary::NativeGetMyASCFromActor(AActor* InActor)
 {
     check(InActor);
@@ -25,7 +27,7 @@ void UMyFunctionLibrary::AddGameplayTagToActorIfNone(AActor* InActor, FGameplayT
     }
 }
 
-void UMyFunctionLibrary::RemoveGameplayFromActorIfFound(AActor* InActor, FGameplayTag TagToRemove)
+void UMyFunctionLibrary::RemoveGameplayTagFromActorIfFound(AActor* InActor, FGameplayTag TagToRemove)
 {
     UMyAbilitySystemComponent* ASC = NativeGetMyASCFromActor(InActor);
 
@@ -122,4 +124,16 @@ FGameplayTag UMyFunctionLibrary::ComputeHitReactDirectionTag(AActor* InAttacker,
     }
 
     return MyGamePlayTags::Shared_Status_HitReact_Front;
+}
+
+bool UMyFunctionLibrary::IsValidBlock(AActor* InAttacker, AActor* InDefender)
+{
+    check(InAttacker && InDefender);
+
+    const float DotResult = FVector::DotProduct(InAttacker->GetActorForwardVector(), InDefender->GetActorForwardVector());
+
+    //const FString DebugString = FString::Printf(TEXT("Dot Result: %f %s"), DotResult, DotResult < 0.f ? TEXT("Valid Block") : TEXT("Invalid block"));
+
+    //Debug::Print(DebugString, DotResult < -0.1f ? FColor::Green : FColor::Red);
+    return DotResult < -0.1f;
 }
