@@ -9,7 +9,6 @@ This project is developed using **Unreal Engine 5**, with the goal of learning h
 ---
 ## 🎥 Demo and Technical document:
 - A **short gameplay demo video** to showcase the combat system (parry, counter and enemy AI): [Combat system showcase](https://www.youtube.com/watch?v=PNoW7SDtOBU)
-- A **detailed technical document** (in-progress) that illustrates the workflows, class diagrams and overall system design: [Soulslike technical doc](https://docs.google.com/document/d/1Hg0a6ZQpi9iUleX7iSmA_LH-Of0rLjHFbnv1wQVeucM/edit?usp=sharing)
 ---
 
 ## 📌 Current Features
